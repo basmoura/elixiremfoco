@@ -1,0 +1,4351 @@
+1
+00:00:00,210 --> 00:00:03,350
+[Música]
+
+2
+00:00:05,389 --> 00:00:08,308
+Elixir em Foco o podcast da
+
+3
+00:00:08,309 --> 00:00:10,888
+comunidade brasileira de Elixir
+
+4
+00:00:10,889 --> 00:00:12,900
+Elixir em foco é um podcast em que
+
+5
+00:00:12,901 --> 00:00:14,669
+conversamos com pessoas da comunidade
+
+6
+00:00:14,670 --> 00:00:17,339
+brasileira e desenvolvedores de software
+
+7
+00:00:17,340 --> 00:00:21,359
+sobre a linguagem de programação Elixir
+
+8
+00:00:21,360 --> 00:00:23,550
+Esta é a nossa segunda temporada em que
+
+9
+00:00:23,551 --> 00:00:27,889
+teremos diferentes formatos de episódio
+
+10
+00:00:29,679 --> 00:00:34,108
+[Música]
+
+11
+00:00:34,338 --> 00:00:37,229
+No episódio de hoje conversaremos com
+
+12
+00:00:37,230 --> 00:00:40,198
+Marlus Saraiva criador da biblioteca
+
+13
+00:00:40,199 --> 00:00:43,729
+Surface
+
+14
+00:00:44,549 --> 00:00:47,670
+Olá eu sou Adolfo Neto professor da
+
+15
+00:00:47,671 --> 00:00:51,299
+UTFPR Curitiba e estou aqui com Hermínio
+
+16
+00:00:51,300 --> 00:00:53,750
+Torres Oi pessoal tudo bem
+
+17
+00:00:53,751 --> 00:00:57,268
+Cristine Guadelupe Olá pessoal Zoe
+
+18
+00:00:57,269 --> 00:00:59,759
+Pessanha Oi galerinha meus colegas de
+
+19
+00:00:59,760 --> 00:01:02,189
+equipe do podcast ele chega em Foco o
+
+20
+00:01:02,190 --> 00:01:04,558
+podcast da comunidade Brasileira de
+
+21
+00:01:04,559 --> 00:01:07,590
+Elixir Hoje iremos entrevistar Marlus
+
+22
+00:01:07,591 --> 00:01:10,649
+Saraiva da SimpleBet que também
+
+23
+00:01:10,650 --> 00:01:13,890
+criador do Surface tudo bem Marlus você
+
+24
+00:01:13,891 --> 00:01:15,329
+pode se apresentar para as pessoas que
+
+25
+00:01:15,330 --> 00:01:18,379
+nos escutam Tudo ótimo Claro
+
+26
+00:01:18,380 --> 00:01:21,840
+Meu nome é Marlos eu tô aí desenvolvendo
+
+27
+00:01:21,841 --> 00:01:26,120
+software mais ou menos há uns 25 anos
+
+28
+00:01:26,121 --> 00:01:28,769
+Eu já trabalhei com
+
+29
+00:01:28,770 --> 00:01:31,739
+um monte de tecnologia diferente aí
+
+30
+00:01:31,740 --> 00:01:32,959
+nesse período
+
+31
+00:01:32,960 --> 00:01:38,218
+e os últimos sete anos mais ou menos
+
+32
+00:01:38,219 --> 00:01:40,670
+eu tava um pouco insatisfeito ali com
+
+33
+00:01:40,671 --> 00:01:43,468
+aquilo que eu tava trabalhando os
+
+34
+00:01:43,469 --> 00:01:45,179
+caminhos que a OO tinha
+
+35
+00:01:45,180 --> 00:01:48,989
+tomado fui atrás ali de ares
+
+36
+00:01:48,990 --> 00:01:52,468
+novos né procurando ali encontrar
+
+37
+00:01:52,469 --> 00:01:54,359
+maneiras de repente melhor de resolver
+
+38
+00:01:54,360 --> 00:01:55,938
+os problemas que eu tinha no dia a dia
+
+39
+00:01:55,939 --> 00:01:58,640
+ai então que eu comecei a
+
+40
+00:01:58,641 --> 00:01:59,439
+a
+
+41
+00:01:59,440 --> 00:02:02,359
+estudar programação funcional a partir
+
+42
+00:02:02,360 --> 00:02:05,780
+daí conheci o Erlang, Elixir E aí deu uma
+
+43
+00:02:05,781 --> 00:02:07,849
+virada na minha carreira comecei a fazer
+
+44
+00:02:07,850 --> 00:02:10,449
+open source e
+
+45
+00:02:10,450 --> 00:02:14,209
+desde lá acabei realmente gostando
+
+46
+00:02:14,210 --> 00:02:16,189
+demais de trabalhar o com open-source
+
+47
+00:02:16,190 --> 00:02:18,469
+abriu muitas portas para mim fui para
+
+48
+00:02:18,470 --> 00:02:21,409
+Plataformatec, depois Dashbit e
+
+49
+00:02:21,410 --> 00:02:23,300
+hoje estou na Simplebet bastante feliz
+
+50
+00:02:23,301 --> 00:02:25,509
+por continuar poder
+
+51
+00:02:25,510 --> 00:02:28,789
+ainda trabalhar com opensource
+
+52
+00:02:28,790 --> 00:02:30,259
+principalmente a tecnologia que eu adoro
+
+53
+00:02:30,260 --> 00:02:31,270
+que é o Elixir
+
+54
+00:02:31,271 --> 00:02:33,319
+maravilha mas se você falou que você
+
+55
+00:02:33,320 --> 00:02:35,539
+conheceu erlanger o elenco ser você você
+
+56
+00:02:35,540 --> 00:02:37,069
+falou Orlândia a lei que você porque foi
+
+57
+00:02:37,070 --> 00:02:39,650
+o primeiro Orlando depois helixer ou na
+
+58
+00:02:39,651 --> 00:02:41,300
+verdade porque a coisa que mais me
+
+59
+00:02:41,301 --> 00:02:42,800
+chamou atenção quando eu comecei a
+
+60
+00:02:42,801 --> 00:02:46,340
+trabalhar com o helix na verdade não foi
+
+61
+00:02:46,341 --> 00:02:49,129
+nem a linguagem Esse foi o que estava
+
+62
+00:02:49,130 --> 00:02:52,099
+por baixo que foi justamente a máquina
+
+63
+00:02:52,100 --> 00:02:55,060
+virtual do erlang a
+
+64
+00:02:55,061 --> 00:02:59,430
+nossa tudo que tem ali Norte SP é aquilo
+
+65
+00:02:59,431 --> 00:03:01,378
+aquilo mudou completamente a maneira que
+
+66
+00:03:01,379 --> 00:03:04,229
+eu pensava sobre os problemas e como eu
+
+67
+00:03:04,230 --> 00:03:05,400
+tinha que resolver problemas
+
+68
+00:03:05,401 --> 00:03:07,139
+especialmente pelo menos complexos como
+
+69
+00:03:07,140 --> 00:03:08,479
+concorrência
+
+70
+00:03:08,480 --> 00:03:11,519
+então foi algo realmente e sempre gosta
+
+71
+00:03:11,520 --> 00:03:13,919
+de falar erlandia link para pagar o
+
+72
+00:03:13,920 --> 00:03:15,750
+crédito que merece porque realmente o
+
+73
+00:03:15,751 --> 00:03:18,329
+que tem ali por baixo é o realmente
+
+74
+00:03:18,330 --> 00:03:22,430
+fascinante que eu acho que todo todo
+
+75
+00:03:22,431 --> 00:03:24,930
+qualquer pessoa que realmente gosta de
+
+76
+00:03:24,931 --> 00:03:26,009
+Janeiro só que gosta de resolver
+
+77
+00:03:26,010 --> 00:03:29,098
+problemas deveria conhecer o que tem lá
+
+78
+00:03:29,099 --> 00:03:30,419
+porque realmente é o que eu acho que é
+
+79
+00:03:30,420 --> 00:03:34,369
+meio que único a
+
+80
+00:03:34,908 --> 00:03:37,378
+minha carreira assim de tudo que eu vi o
+
+81
+00:03:37,379 --> 00:03:39,109
+sal realmente que mudou completamente
+
+82
+00:03:39,110 --> 00:03:42,689
+é muito fácil você mudar de linguagem e
+
+83
+00:03:42,690 --> 00:03:44,068
+uma coisa que eu percebi depois nesses
+
+84
+00:03:44,069 --> 00:03:46,680
+25 anos Só acho um pouco tchau eu vou
+
+85
+00:03:46,681 --> 00:03:48,359
+falar 17 anos que eu percebia que não
+
+86
+00:03:48,360 --> 00:03:51,090
+adiantava mudar a linguagem a tecnologia
+
+87
+00:03:51,091 --> 00:03:52,949
+se você na verdade ainda tava utilizando
+
+88
+00:03:52,950 --> 00:03:55,650
+os mesmos conceitos entendeu então eu
+
+89
+00:03:55,651 --> 00:03:59,669
+percebi e o momento que eu conte e do
+
+90
+00:03:59,670 --> 00:04:01,900
+desenvolvedor ser mais mais Entendeu
+
+91
+00:04:01,901 --> 00:04:04,389
+seja mesmo tendo depois que eu já vou
+
+92
+00:04:04,390 --> 00:04:07,840
+para o PHP por Rubi até teu então no
+
+93
+00:04:07,841 --> 00:04:10,030
+final das contas o modelo por baixo no
+
+94
+00:04:10,031 --> 00:04:11,919
+mesmo então maneira de resolver os
+
+95
+00:04:11,920 --> 00:04:15,280
+problemas ela mesma eu só vi isso mudar
+
+96
+00:04:15,281 --> 00:04:17,110
+realmente a minha carreira uma vez foi a
+
+97
+00:04:17,111 --> 00:04:18,279
+mais para eu começar a estudar lá
+
+98
+00:04:18,280 --> 00:04:20,589
+programação funcional E aí depois
+
+99
+00:04:20,590 --> 00:04:23,430
+arlandia lei que se toda a questão da
+
+100
+00:04:23,431 --> 00:04:25,110
+do
+
+101
+00:04:25,111 --> 00:04:28,870
+da UTP cara realmente algo que todo
+
+102
+00:04:28,871 --> 00:04:30,250
+mundo deveria pelo menos conhecer eu
+
+103
+00:04:30,251 --> 00:04:33,579
+acho que abre realmente o leque de
+
+104
+00:04:33,580 --> 00:04:35,110
+opções de Como você consegue resolver
+
+105
+00:04:35,111 --> 00:04:38,170
+problemas humanos como o nosso tema do
+
+106
+00:04:38,171 --> 00:04:40,629
+episódio hoje é sobre o seu Face você
+
+107
+00:04:40,630 --> 00:04:42,970
+poderia explicar para nós O que é o seu
+
+108
+00:04:42,971 --> 00:04:45,730
+Face olha na verdade vamos lá o seu
+
+109
+00:04:45,731 --> 00:04:48,089
+fazer uma biblioteca
+
+110
+00:04:48,090 --> 00:04:51,519
+para gente trabalhar utilizando o Fênix
+
+111
+00:04:51,520 --> 00:04:56,350
+né no caso Fênix viu e a intenção é a
+
+112
+00:04:56,351 --> 00:04:57,790
+gente tem uma melhor experiência
+
+113
+00:04:57,791 --> 00:05:02,418
+desenvolvi e o fixa 1u baita projeto
+
+114
+00:05:02,419 --> 00:05:03,800
+assim que já trabalhou sabe das
+
+115
+00:05:03,801 --> 00:05:07,310
+qualidades do Fênix com Live viu você
+
+116
+00:05:07,311 --> 00:05:11,050
+desenvolver aplicações Real Time é algo
+
+117
+00:05:11,051 --> 00:05:14,259
+muito produtivo
+
+118
+00:05:14,260 --> 00:05:18,680
+e o social que você pode utilizar para
+
+119
+00:05:18,681 --> 00:05:20,899
+ainda melhorar ainda essa experiência
+
+120
+00:05:20,900 --> 00:05:23,478
+entendeu seja usar toda essa esse Core
+
+121
+00:05:23,479 --> 00:05:26,778
+que é muito bom e muito eficiente e ter
+
+122
+00:05:26,779 --> 00:05:28,639
+algo com experiência desenvolvimento
+
+123
+00:05:28,640 --> 00:05:32,089
+melhor então essa o objetivo dos anjos e
+
+124
+00:05:32,090 --> 00:05:34,519
+o que que te motivou a desenvolver o
+
+125
+00:05:34,520 --> 00:05:36,060
+Service
+
+126
+00:05:36,061 --> 00:05:41,000
+é bem mais ou menos uns dois anos e meio
+
+127
+00:05:41,001 --> 00:05:43,680
+eu fui fazer uma palestra na like se
+
+128
+00:05:43,681 --> 00:05:46,709
+confi É sobre o brother aí não é para
+
+129
+00:05:46,710 --> 00:05:49,019
+gente acabar desenvolver o brother Aí lá
+
+130
+00:05:49,020 --> 00:05:51,990
+na plataforma Tec e eu ia fazer essa
+
+131
+00:05:51,991 --> 00:05:54,269
+apresentação lá mostrando como é que
+
+132
+00:05:54,270 --> 00:05:56,668
+funcionava o brother Então eu queria de
+
+133
+00:05:56,669 --> 00:05:58,230
+alguma maneira mostrar realmente Como
+
+134
+00:05:58,231 --> 00:05:59,610
+funcionava Como funcionava a
+
+135
+00:05:59,611 --> 00:06:02,550
+concorrência Como funcionava o o pai
+
+136
+00:06:02,551 --> 00:06:04,470
+pilarnews aqui uma maneira de você fazer
+
+137
+00:06:04,471 --> 00:06:07,279
+com que o
+
+138
+00:06:07,280 --> 00:06:08,529
+e
+
+139
+00:06:08,530 --> 00:06:11,000
+as pessoas entenderem realmente como
+
+140
+00:06:11,001 --> 00:06:12,379
+funciona então a minha intenção fazer um
+
+141
+00:06:12,380 --> 00:06:15,079
+dashboard nesse dashboard eu queria ter
+
+142
+00:06:15,080 --> 00:06:17,389
+o pai pe Line que seria montado pelo
+
+143
+00:06:17,390 --> 00:06:19,490
+brother e é o pai tomar de concorrente
+
+144
+00:06:19,491 --> 00:06:22,430
+para ingerir dados e o que as pessoas
+
+145
+00:06:22,431 --> 00:06:25,639
+visualizassem esse pai pe Line ver o
+
+146
+00:06:25,640 --> 00:06:27,829
+time então vocês você tinha Spike lá
+
+147
+00:06:27,830 --> 00:06:29,540
+fazendo várias processamentos
+
+148
+00:06:29,541 --> 00:06:31,759
+concorrentes e eu queria uma maneira do
+
+149
+00:06:31,760 --> 00:06:34,668
+do público conseguiu identificar a
+
+150
+00:06:34,669 --> 00:06:36,110
+medida que a gente fosse consumir nesses
+
+151
+00:06:36,111 --> 00:06:38,149
+dados onde é que estariam por exemplo
+
+152
+00:06:38,150 --> 00:06:40,009
+gargalos no parque Laine entendeu seja
+
+153
+00:06:40,010 --> 00:06:42,019
+pra você identificar repente você tinha
+
+154
+00:06:42,020 --> 00:06:43,480
+que aumentar a concorrência
+
+155
+00:06:43,481 --> 00:06:48,019
+naquele naquele aquela camada específica
+
+156
+00:06:48,020 --> 00:06:50,269
+do pai tá online então é um soft que
+
+157
+00:06:50,270 --> 00:06:53,439
+precisava realmente Digitam o poder de
+
+158
+00:06:53,440 --> 00:06:55,699
+atualização coisa bastante eficiente
+
+159
+00:06:55,700 --> 00:06:57,910
+para você poder
+
+160
+00:06:57,911 --> 00:07:00,079
+terça essa característica do Real Time
+
+161
+00:07:00,080 --> 00:07:01,850
+né da atualização enquanto os dados
+
+162
+00:07:01,851 --> 00:07:03,168
+estão sendo consumido na velocidade
+
+163
+00:07:03,169 --> 00:07:06,079
+muito rápida bom então utilizei o Fix no
+
+164
+00:07:06,080 --> 00:07:08,990
+ai viu na época e fiquei impressionado
+
+165
+00:07:08,991 --> 00:07:11,959
+com realmente a produtividade que ele me
+
+166
+00:07:11,960 --> 00:07:14,658
+deu pra ver eu desenvolvi esse
+
+167
+00:07:14,659 --> 00:07:16,180
+dashboard.com
+
+168
+00:07:16,181 --> 00:07:18,800
+sem java script entendeu então assim um
+
+169
+00:07:18,801 --> 00:07:23,319
+dashboard todo em seu time com muita
+
+170
+00:07:23,320 --> 00:07:26,899
+interatividade e os jovens cristãos que
+
+171
+00:07:26,900 --> 00:07:29,360
+me impressionou muito e o lado ruim foi
+
+172
+00:07:29,361 --> 00:07:30,918
+que eu achei que a experiência não tinha
+
+173
+00:07:30,919 --> 00:07:32,778
+não tinha sido muito boa em termos por
+
+174
+00:07:32,779 --> 00:07:35,060
+exemplo da linguagem de template
+
+175
+00:07:35,061 --> 00:07:37,699
+entendeu tempo antes do Yaris eu achava
+
+176
+00:07:37,700 --> 00:07:39,050
+que não era um tecnologia apropriada
+
+177
+00:07:39,051 --> 00:07:41,079
+para resolver aqueles problemas entendeu
+
+178
+00:07:41,080 --> 00:07:43,639
+É eu também vi que não tinha um modelo
+
+179
+00:07:43,640 --> 00:07:45,829
+de componentes entender então eu já
+
+180
+00:07:45,830 --> 00:07:47,930
+tinha trabalhado com o com outras
+
+181
+00:07:47,931 --> 00:07:48,639
+tecnologias
+
+182
+00:07:48,640 --> 00:07:51,348
+conceitos bem definidos de componentes
+
+183
+00:07:51,349 --> 00:07:53,949
+como o leque
+
+184
+00:07:53,950 --> 00:07:56,598
+outras coisas então Achava que faltavam
+
+185
+00:07:56,599 --> 00:07:58,968
+esse modelo a chave que o que tinha por
+
+186
+00:07:58,969 --> 00:08:00,528
+baixo era muito bom aqui no jeito a
+
+187
+00:08:00,529 --> 00:08:02,629
+gente era muito boa mas faltava algo
+
+188
+00:08:02,630 --> 00:08:05,339
+para melhorar logo e a experiência de
+
+189
+00:08:05,340 --> 00:08:07,110
+desenvolvimento sejam linguagem template
+
+190
+00:08:07,111 --> 00:08:10,199
+mais moderna o modelo de componentes
+
+191
+00:08:10,200 --> 00:08:12,959
+mais bem estruturado com a perda
+
+192
+00:08:12,960 --> 00:08:16,199
+criativa e foi aí que surgiu o Santos eu
+
+193
+00:08:16,200 --> 00:08:18,750
+fiz o protótipo bem rápido em poucas
+
+194
+00:08:18,751 --> 00:08:21,569
+semanas em para validar a ele que você
+
+195
+00:08:21,570 --> 00:08:23,430
+compra mostrou para o vale um hipocrisia
+
+196
+00:08:23,431 --> 00:08:25,860
+eles adoraram a ideia e disseram o cara
+
+197
+00:08:25,861 --> 00:08:27,209
+é muito massa mas é impossível a gente
+
+198
+00:08:27,210 --> 00:08:30,329
+fazer isso para o projeto do Fênix né
+
+199
+00:08:30,330 --> 00:08:32,908
+seja muita coisa que não dá para gente
+
+200
+00:08:32,909 --> 00:08:36,179
+trazer né porque o filme Então faz um
+
+201
+00:08:36,180 --> 00:08:38,219
+projeto é separado e aí surgiu fui
+
+202
+00:08:38,220 --> 00:08:39,389
+fazendo isso correto separado a gente
+
+203
+00:08:39,390 --> 00:08:43,259
+começou a a a prazer não é contribuições
+
+204
+00:08:43,260 --> 00:08:45,149
+pessoal começou a ficar empolgado com o
+
+205
+00:08:45,150 --> 00:08:48,000
+modelo e hoje a gente está trazendo
+
+206
+00:08:48,001 --> 00:08:50,278
+praticamente esse modelo para dentro do
+
+207
+00:08:50,279 --> 00:08:53,309
+Live aos poucos né do já que você tocou
+
+208
+00:08:53,310 --> 00:08:56,839
+no assunto é a gente sabe que o Fênix
+
+209
+00:08:56,840 --> 00:09:00,089
+ele acaba tendo um ele é mais acaba
+
+210
+00:09:00,090 --> 00:09:01,620
+sendo mais focado por é que a gente né
+
+211
+00:09:01,621 --> 00:09:03,879
+apesar de poder ter SRT
+
+212
+00:09:03,880 --> 00:09:07,570
+e a Confins lá e viu ele esse paradigma
+
+213
+00:09:07,571 --> 00:09:11,710
+acaba tendo uma mudada Mas qual o seu
+
+214
+00:09:11,711 --> 00:09:13,210
+palpite sobre alguém The Fruit a gente
+
+215
+00:09:13,211 --> 00:09:16,299
+trabalhar utilizando o Surface alguém
+
+216
+00:09:16,300 --> 00:09:17,590
+com experiência Como você mesmo disse
+
+217
+00:09:17,591 --> 00:09:20,649
+indirect viu e fico com outro eu acho
+
+218
+00:09:20,650 --> 00:09:23,830
+que assim eu pelo que eu já vi na minha
+
+219
+00:09:23,831 --> 00:09:25,690
+carreira entendeu Acho que a maneira que
+
+220
+00:09:25,691 --> 00:09:29,309
+hoje o caminho que o front-end
+
+221
+00:09:29,310 --> 00:09:32,500
+tomou achou o caminho que trouxe muita
+
+222
+00:09:32,501 --> 00:09:34,750
+complexidade entendeu E não é culpa das
+
+223
+00:09:34,751 --> 00:09:36,490
+tecnologias na verdade é um culto mais
+
+224
+00:09:36,491 --> 00:09:38,070
+ou menos na evolução
+
+225
+00:09:38,071 --> 00:09:40,990
+das tecnologias né você já existe esse
+
+226
+00:09:40,991 --> 00:09:43,210
+pêndulo na na tecnologia quando você
+
+227
+00:09:43,211 --> 00:09:45,909
+fala de cliente-servidor E durante os
+
+228
+00:09:45,910 --> 00:09:49,360
+anos você tinha terminais burros que a
+
+229
+00:09:49,361 --> 00:09:51,610
+gente chamava lá então era Praticamente
+
+230
+00:09:51,611 --> 00:09:53,559
+tudo no servidores terminar isso não
+
+231
+00:09:53,560 --> 00:09:55,899
+tenho praticamente nada então depois
+
+232
+00:09:55,900 --> 00:09:57,940
+você até de vários momentos na de
+
+233
+00:09:57,941 --> 00:09:59,740
+evolução da tecnologia onde Isso mudou
+
+234
+00:09:59,741 --> 00:10:02,259
+por ser partir para o modelo e o gunder
+
+235
+00:10:02,260 --> 00:10:06,639
+tecnologias e de de de de
+
+236
+00:10:06,640 --> 00:10:09,589
+clientes ricos depois que trouxe muito
+
+237
+00:10:09,590 --> 00:10:11,208
+desenvolvimento para o desktop por
+
+238
+00:10:11,209 --> 00:10:13,730
+exemplo de visual beijo que você fez até
+
+239
+00:10:13,731 --> 00:10:16,339
+você teve um monte de tecnologias onde
+
+240
+00:10:16,340 --> 00:10:17,899
+você começou a dividir esse trabalho
+
+241
+00:10:17,900 --> 00:10:20,749
+depois veio a web então voltou mais por
+
+242
+00:10:20,750 --> 00:10:23,359
+servidor de novo porque você agora a
+
+243
+00:10:23,360 --> 00:10:25,850
+escala não era mais tipo só empresa uma
+
+244
+00:10:25,851 --> 00:10:28,159
+escala local escala foi de algumas
+
+245
+00:10:28,160 --> 00:10:30,230
+centenas de usuários para milhões e
+
+246
+00:10:30,231 --> 00:10:32,418
+milhões de usuários no mundo você teve
+
+247
+00:10:32,419 --> 00:10:35,149
+que ir para o modelo Station é hoje você
+
+248
+00:10:35,150 --> 00:10:37,369
+não tinha como realmente ter conexões
+
+249
+00:10:37,370 --> 00:10:40,548
+dedicadas então às vezes o pessoal chama
+
+250
+00:10:40,549 --> 00:10:42,379
+de culpas tecnologias né do jeito que
+
+251
+00:10:42,380 --> 00:10:44,208
+elas a massa ela sempre surge uma
+
+252
+00:10:44,209 --> 00:10:46,100
+necessidade né então todas as
+
+253
+00:10:46,101 --> 00:10:47,778
+tecnologias elas são importantes elas
+
+254
+00:10:47,779 --> 00:10:50,539
+foram importantes para a evolução do que
+
+255
+00:10:50,540 --> 00:10:51,589
+a gente tem hoje então acho que o
+
+256
+00:10:51,590 --> 00:10:53,839
+front-end do jeito que ele tá Hoje ele
+
+257
+00:10:53,840 --> 00:10:55,389
+foi vítima daquilo
+
+258
+00:10:55,390 --> 00:10:58,100
+que surgiu por exemplo nessa nessa
+
+259
+00:10:58,101 --> 00:10:59,629
+nascer outro passo da evolução depois
+
+260
+00:10:59,630 --> 00:11:01,578
+que a gente como a gente começou a
+
+261
+00:11:01,579 --> 00:11:03,899
+trazer inteligência de novo para o Brás
+
+262
+00:11:03,900 --> 00:11:06,330
+o jogo no começo era tudo esteja
+
+263
+00:11:06,331 --> 00:11:07,950
+Nascimento Arthur feito um servidor você
+
+264
+00:11:07,951 --> 00:11:09,870
+traz aquela parte então você começou
+
+265
+00:11:09,871 --> 00:11:13,110
+adicionar javscript começou a fazer o
+
+266
+00:11:13,111 --> 00:11:15,809
+pequenas revoluções a lei o na interação
+
+267
+00:11:15,810 --> 00:11:18,990
+com o usuário depois vai o Ajax então já
+
+268
+00:11:18,991 --> 00:11:21,240
+começou a gente poder trazer dados e
+
+269
+00:11:21,241 --> 00:11:22,740
+fazer alguma coisa no cliente para dar
+
+270
+00:11:22,741 --> 00:11:25,169
+uma experiência melhor e eu acho que por
+
+271
+00:11:25,170 --> 00:11:26,340
+aí que foi corrente meu que perdeu um
+
+272
+00:11:26,341 --> 00:11:28,590
+pouco do controle entendeu então a gente
+
+273
+00:11:28,591 --> 00:11:31,289
+começou a trazer coisa demais para o
+
+274
+00:11:31,290 --> 00:11:34,289
+front-end e proveniente de uma maneira
+
+275
+00:11:34,290 --> 00:11:35,730
+desnecessária Não por culpa da
+
+276
+00:11:35,731 --> 00:11:37,379
+tecnologia mas por culpa nas questões
+
+277
+00:11:37,380 --> 00:11:40,860
+tecnológicas realmente entendeu É por
+
+278
+00:11:40,861 --> 00:11:42,269
+isso que eu sou muito fã do fins porque
+
+279
+00:11:42,270 --> 00:11:45,299
+não fique somente você tem como é barato
+
+280
+00:11:45,300 --> 00:11:47,940
+na máquina digital da Islândia Falcão
+
+281
+00:11:47,941 --> 00:11:49,980
+foi feito para concorrência então é
+
+282
+00:11:49,981 --> 00:11:52,440
+simples você mantém milhões de conexões
+
+283
+00:11:52,441 --> 00:11:55,110
+e um servidor Isso muda de novo a
+
+284
+00:11:55,111 --> 00:11:57,210
+experiência não se você não é mais
+
+285
+00:11:57,211 --> 00:11:59,549
+obrigado a trazer tanta coisa para o
+
+286
+00:11:59,550 --> 00:12:01,320
+cliente processado clientes onde você
+
+287
+00:12:01,321 --> 00:12:04,690
+pode fazer muita coisa no servidor bom e
+
+288
+00:12:04,691 --> 00:12:08,110
+como Lajes viu ele é no servidor então é
+
+289
+00:12:08,111 --> 00:12:10,509
+muito mais produtiva Seja você já tem
+
+290
+00:12:10,510 --> 00:12:12,820
+você consegue você tá próximo dos dados
+
+291
+00:12:12,821 --> 00:12:14,769
+né porque eu acho um dos grandes
+
+292
+00:12:14,770 --> 00:12:16,710
+problemas que a gente tem de desenvolver
+
+293
+00:12:16,711 --> 00:12:19,179
+corri arte não é a pressão de com Essas
+
+294
+00:12:19,180 --> 00:12:20,740
+tecnologias aqui você acaba tendo que
+
+295
+00:12:20,741 --> 00:12:22,149
+trazer muita coisa do Servidor para
+
+296
+00:12:22,150 --> 00:12:25,330
+processar aqui e fazendo isso a gente
+
+297
+00:12:25,331 --> 00:12:26,950
+sabe que o cliente ele tá longe dos
+
+298
+00:12:26,951 --> 00:12:29,500
+dados então e deixou série de
+
+299
+00:12:29,501 --> 00:12:31,330
+complicações de camadas que a gente tem
+
+300
+00:12:31,331 --> 00:12:32,409
+que colocar quando a gente está
+
+301
+00:12:32,410 --> 00:12:33,700
+trabalhando dessa maneira não seja você
+
+302
+00:12:33,701 --> 00:12:35,769
+tem que se preocupar com os é realização
+
+303
+00:12:35,770 --> 00:12:37,450
+que você vai trazer dados do Servidor
+
+304
+00:12:37,451 --> 00:12:39,429
+para o cliente tem que preocupar em como
+
+305
+00:12:39,430 --> 00:12:41,019
+serializar em Como disse analisar os tem
+
+306
+00:12:41,020 --> 00:12:42,659
+que se preocupar muito mais com o
+
+307
+00:12:42,660 --> 00:12:44,490
+autenticação autorização
+
+308
+00:12:44,491 --> 00:12:46,870
+então é algo que quando você tá perto
+
+309
+00:12:46,871 --> 00:12:49,690
+dos dados é muito mais simples você tem
+
+310
+00:12:49,691 --> 00:12:51,009
+que se preocupar muito menos com essas
+
+311
+00:12:51,010 --> 00:12:52,720
+camadas Vasco Grande a grande vantagem
+
+312
+00:12:52,721 --> 00:12:55,539
+de usar Fênix lá e viu o da teologia
+
+313
+00:12:55,540 --> 00:12:57,100
+semelhantes a que você consegue ter um
+
+314
+00:12:57,101 --> 00:12:59,100
+próprio de produtividade muito maior
+
+315
+00:12:59,101 --> 00:13:01,450
+porque você já tá perto dos dados Então
+
+316
+00:13:01,451 --> 00:13:04,789
+você consegue tratar esses é muito mais
+
+317
+00:13:04,790 --> 00:13:07,519
+rápido com muito menos camadas entendeu
+
+318
+00:13:07,520 --> 00:13:09,499
+sempre junto antes camadas a vão
+
+319
+00:13:09,500 --> 00:13:11,089
+utilizar rest para trazer essas Claro
+
+320
+00:13:11,090 --> 00:13:13,399
+vou utilizar Gravity well Então você
+
+321
+00:13:13,400 --> 00:13:15,769
+acaba hoje que muitos sistemas que
+
+322
+00:13:15,770 --> 00:13:17,989
+poderiam não tem nada disso hoje tem
+
+323
+00:13:17,990 --> 00:13:19,730
+realmente várias camadas não se fica com
+
+324
+00:13:19,731 --> 00:13:23,389
+aquele aquele nó de módulos de mais de 1
+
+325
+00:13:23,390 --> 00:13:25,188
+Giga aquele peso para fazer qualquer
+
+326
+00:13:25,189 --> 00:13:27,489
+coisa eu acho que realmente não
+
+327
+00:13:27,490 --> 00:13:29,720
+lembrando Nacional de coco de Não nessa
+
+328
+00:13:29,721 --> 00:13:32,359
+cidade até que eu já são todas ótimas é
+
+329
+00:13:32,360 --> 00:13:33,889
+só porque para grande maioria dos
+
+330
+00:13:33,890 --> 00:13:35,688
+sistemas que você desenvolve hoje pelas
+
+331
+00:13:35,689 --> 00:13:38,149
+aqueles que eu não preciso mais familiar
+
+332
+00:13:38,150 --> 00:13:41,568
+Ou seja sistemas corporativos né então
+
+333
+00:13:41,569 --> 00:13:43,339
+muitas vezes não precisarão de toda essa
+
+334
+00:13:43,340 --> 00:13:45,499
+complexidade e quando precisar você
+
+335
+00:13:45,500 --> 00:13:48,369
+poderia ser por algo específico né o ati
+
+336
+00:13:48,370 --> 00:13:50,808
+dedicada ali a um serviço para terceiros
+
+337
+00:13:50,809 --> 00:13:53,298
+entendeu Mas você realmente desenvolver
+
+338
+00:13:53,299 --> 00:13:54,730
+todo o sistema
+
+339
+00:13:54,731 --> 00:13:58,009
+corporativo com nosso centenas de telas
+
+340
+00:13:58,010 --> 00:14:01,698
+e relatórios tudo isso você tendo que se
+
+341
+00:14:01,699 --> 00:14:03,350
+preocupar em todas essas camadas do
+
+342
+00:14:03,351 --> 00:14:06,210
+Servidor O que é bem mais caro e mais
+
+343
+00:14:06,211 --> 00:14:08,370
+difícil moderno e você acha que é
+
+344
+00:14:08,371 --> 00:14:11,129
+importante para um desenvolvedor onde
+
+345
+00:14:11,130 --> 00:14:12,950
+desenvolvedora conhecer o Live View
+
+346
+00:14:12,951 --> 00:14:17,820
+antes de utilizar o Surfers Olha eu acho
+
+347
+00:14:17,821 --> 00:14:20,610
+que o ponto que a gente tá agora eu acho
+
+348
+00:14:20,611 --> 00:14:23,340
+que próxima vez tanto faz seus conceitos
+
+349
+00:14:23,341 --> 00:14:24,840
+porque antes antes era um pouco
+
+350
+00:14:24,841 --> 00:14:26,970
+complicado porque os conceitos que a
+
+351
+00:14:26,971 --> 00:14:29,960
+gente havia trazido e
+
+352
+00:14:29,961 --> 00:14:32,700
+no surf se não existiam lá e viu né
+
+353
+00:14:32,701 --> 00:14:35,879
+então a gente tem que fazer muita coisa
+
+354
+00:14:35,880 --> 00:14:39,029
+do zero então há um ano atrás por
+
+355
+00:14:39,030 --> 00:14:41,580
+exemplo se você se você escolhesse uma
+
+356
+00:14:41,581 --> 00:14:44,100
+outra seria muito diferente modelo não é
+
+357
+00:14:44,101 --> 00:14:45,929
+mas então a gente fez todo um trabalho
+
+358
+00:14:45,930 --> 00:14:47,639
+para trazer aquilo que que a gente
+
+359
+00:14:47,640 --> 00:14:51,480
+conseguiu trazer para o Sam fiz a gente
+
+360
+00:14:51,481 --> 00:14:53,190
+conseguiu convencer a comunidade que era
+
+361
+00:14:53,191 --> 00:14:54,960
+Realmente o modelo muito superior
+
+362
+00:14:54,961 --> 00:14:57,049
+enterro Gir experiência desenvolvimento
+
+363
+00:14:57,050 --> 00:14:59,220
+então a gente já conseguiu trazer
+
+364
+00:14:59,221 --> 00:15:01,320
+basicamente talvez ali setenta por cento
+
+365
+00:15:01,321 --> 00:15:03,879
+do Core Plus review
+
+366
+00:15:03,880 --> 00:15:06,340
+e não é o que o que é fantástico
+
+367
+00:15:06,341 --> 00:15:07,960
+entendeu porque Essas tecnologias são
+
+368
+00:15:07,961 --> 00:15:10,330
+cada vez mais convivendo e no final
+
+369
+00:15:10,331 --> 00:15:11,950
+próximo a gente vai ter realmente ele é
+
+370
+00:15:11,951 --> 00:15:14,409
+uma questão mesmo que de uma pequena
+
+371
+00:15:14,410 --> 00:15:15,879
+camada que a gente ainda pode colocar
+
+372
+00:15:15,880 --> 00:15:19,419
+por cima do fim do agiu de acordo com o
+
+373
+00:15:19,420 --> 00:15:20,610
+gosto do
+
+374
+00:15:20,611 --> 00:15:24,309
+usuário entendeu sejam cada um vai ter
+
+375
+00:15:24,310 --> 00:15:26,139
+suas vantagens desvantagens assim
+
+376
+00:15:26,140 --> 00:15:29,519
+qualquer tecnologia e
+
+377
+00:15:29,520 --> 00:15:32,500
+acaba que a diferença que no caso do
+
+378
+00:15:32,501 --> 00:15:35,110
+lado e sempre vai tentar manter talvez
+
+379
+00:15:35,111 --> 00:15:37,419
+dessa maneira mais canônica né o
+
+380
+00:15:37,420 --> 00:15:39,240
+template por exemplo é bem mais
+
+381
+00:15:39,241 --> 00:15:41,980
+facilmente e é que com algumas
+
+382
+00:15:41,981 --> 00:15:44,200
+modificações para tirar algumas
+
+383
+00:15:44,201 --> 00:15:46,000
+limitações que o IACS tinha quero bem
+
+384
+00:15:46,001 --> 00:15:48,490
+problemáticas para trabalhar com laje
+
+385
+00:15:48,491 --> 00:15:49,590
+viu
+
+386
+00:15:49,591 --> 00:15:52,269
+então vai acho que o foco enquanto de
+
+387
+00:15:52,270 --> 00:15:53,970
+repente do
+
+388
+00:15:53,971 --> 00:15:56,440
+Rick não vai vir vai ser mais talvez de
+
+389
+00:15:56,441 --> 00:15:59,409
+mantença compatibilidade no caso do surf
+
+390
+00:15:59,410 --> 00:16:02,980
+se a o foco é experiência
+
+391
+00:16:02,981 --> 00:16:05,480
+desenvolvimento se você já é realmente
+
+392
+00:16:05,481 --> 00:16:07,909
+simplificar Eu ainda acho que o fixa
+
+393
+00:16:07,910 --> 00:16:10,578
+complexo para quem não trabalha com
+
+394
+00:16:10,579 --> 00:16:12,169
+elite ainda entendeu para quem vende
+
+395
+00:16:12,170 --> 00:16:13,480
+outras tecnologias
+
+396
+00:16:13,481 --> 00:16:15,528
+acho que tem bastante coisa para
+
+397
+00:16:15,529 --> 00:16:17,089
+aprender quando você vai para o fim já
+
+398
+00:16:17,090 --> 00:16:18,769
+tem ali conceito de promoção funcional
+
+399
+00:16:18,770 --> 00:16:20,480
+que você tem que aprender não tem jeito
+
+400
+00:16:20,481 --> 00:16:24,230
+aí tem o TP já tem tanta coisa aqui eu
+
+401
+00:16:24,231 --> 00:16:25,489
+acho que se a gente conseguir sempre
+
+402
+00:16:25,490 --> 00:16:27,159
+ficar mais o modelo
+
+403
+00:16:27,160 --> 00:16:29,928
+eu acho que facilita a gente conseguir à
+
+404
+00:16:29,929 --> 00:16:31,519
+frente trazer mais adeptos ali pra fazer
+
+405
+00:16:31,520 --> 00:16:34,009
+o pessoal além de Java pessoal deixar o
+
+406
+00:16:34,010 --> 00:16:36,318
+Sprint um monte de gente boa que tem por
+
+407
+00:16:36,319 --> 00:16:38,808
+aí dot net eu acho que a gente conseguir
+
+408
+00:16:38,809 --> 00:16:41,328
+trazer algo um pouco mais longe mais
+
+409
+00:16:41,329 --> 00:16:43,489
+nesse nicho então a gente talvez tenha
+
+410
+00:16:43,490 --> 00:16:46,659
+sucesso em trazer mais adeptos enquanto
+
+411
+00:16:46,660 --> 00:16:50,119
+estava falando sobre as respondendo as
+
+412
+00:16:50,120 --> 00:16:52,730
+perguntas dos dos condutores aquele
+
+413
+00:16:52,731 --> 00:16:54,350
+podcast eu tava dando uma olhada aqui na
+
+414
+00:16:54,351 --> 00:16:56,208
+organização do Surfers né que é os seus
+
+415
+00:16:56,209 --> 00:16:59,028
+preços Uai no que te ame e vi que tem
+
+416
+00:16:59,029 --> 00:17:01,039
+outro projeto falei dos Santos poderia
+
+417
+00:17:01,040 --> 00:17:03,899
+dar um Quais quais desses projetos são e
+
+418
+00:17:03,900 --> 00:17:06,539
+quantos Elvis para a organização e
+
+419
+00:17:06,540 --> 00:17:10,079
+poderia dar um breve Panorama sobre o
+
+420
+00:17:10,080 --> 00:17:12,930
+que Vale ressaltar além desses projetos
+
+421
+00:17:12,931 --> 00:17:15,650
+além do seu crescimento não
+
+422
+00:17:15,651 --> 00:17:19,348
+o projeto principal selfies né mas lá no
+
+423
+00:17:19,349 --> 00:17:21,000
+nosso objetivo a gente tem alguns outros
+
+424
+00:17:21,001 --> 00:17:23,730
+projetos satélites Alguns são
+
+425
+00:17:23,731 --> 00:17:25,680
+experimentos nessas mentiras validades
+
+426
+00:17:25,681 --> 00:17:28,140
+alguma ideia então a gente queria ler um
+
+427
+00:17:28,141 --> 00:17:29,730
+projeto a gente não começa a testar logo
+
+428
+00:17:29,731 --> 00:17:32,490
+dentro dos Anjos Então a gente tem por
+
+429
+00:17:32,491 --> 00:17:36,089
+exemplo biossance formata que a partir
+
+430
+00:17:36,090 --> 00:17:37,829
+do se você já tá usando Alice eu conto
+
+431
+00:17:37,830 --> 00:17:39,750
+três você já não precisa mais utilizar
+
+432
+00:17:39,751 --> 00:17:41,910
+ele como eu até que separam você gente
+
+433
+00:17:41,911 --> 00:17:42,890
+já foi
+
+434
+00:17:42,891 --> 00:17:45,630
+já tá saindo já embutido no próprio
+
+435
+00:17:45,631 --> 00:17:47,700
+some-se a gente faz o mestre desse
+
+436
+00:17:47,701 --> 00:17:50,009
+projeto não sei que tá ajudando pressões
+
+437
+00:17:50,010 --> 00:17:53,759
+antigos ainda Precisa é a gente tem o
+
+438
+00:17:53,760 --> 00:17:57,059
+cara logo que é Nossa tentativa de algo
+
+439
+00:17:57,060 --> 00:18:00,839
+parecido com o storybook né do que tem
+
+440
+00:18:00,840 --> 00:18:05,108
+no já no na comunidade Java Script e a
+
+441
+00:18:05,109 --> 00:18:08,638
+gente tem alguns projetos que que já
+
+442
+00:18:08,639 --> 00:18:11,259
+oferecem alguns componentes para definir
+
+443
+00:18:11,260 --> 00:18:13,269
+os gente tem que se baseia no loubotin
+
+444
+00:18:13,270 --> 00:18:16,209
+crepe tem outro Project base no Bulma a
+
+445
+00:18:16,210 --> 00:18:17,858
+gente tá vendo também a possibilidade de
+
+446
+00:18:17,859 --> 00:18:20,078
+ter um projeto com componentes Tail Wind
+
+447
+00:18:20,079 --> 00:18:23,949
+né que a gente tá tá vendo aí se vale a
+
+448
+00:18:23,950 --> 00:18:25,659
+pena não é complicado você trazer muitos
+
+449
+00:18:25,660 --> 00:18:27,578
+projetos também para a mesma organização
+
+450
+00:18:27,579 --> 00:18:30,578
+assim o foco da gente o falcão dos
+
+451
+00:18:30,579 --> 00:18:32,558
+Santos na verdade eles sejam um projeto
+
+452
+00:18:32,559 --> 00:18:35,229
+onde as pessoas possam utilizar ele para
+
+453
+00:18:35,230 --> 00:18:36,729
+desenvolver componentes de maneira mais
+
+454
+00:18:36,730 --> 00:18:38,038
+rápida e a utilizar esses componentes
+
+455
+00:18:38,039 --> 00:18:40,148
+vocês não é o objetivo principal da
+
+456
+00:18:40,149 --> 00:18:41,858
+gente de desenvolver os componentes em
+
+457
+00:18:41,859 --> 00:18:44,979
+si né e os custos a gente oferece a
+
+458
+00:18:44,980 --> 00:18:46,209
+maneira tão simples desenvolver
+
+459
+00:18:46,210 --> 00:18:47,949
+componentes principalmente se você
+
+460
+00:18:47,950 --> 00:18:49,558
+utiliza não
+
+461
+00:18:49,559 --> 00:18:52,209
+tem o índio ou seja que acho que não
+
+462
+00:18:52,210 --> 00:18:53,648
+precisa a gente vai para desenvolver
+
+463
+00:18:53,649 --> 00:18:56,469
+todos esses componentes eu acho que você
+
+464
+00:18:56,470 --> 00:18:57,909
+consegue vou ver se o Brasil era bem
+
+465
+00:18:57,910 --> 00:18:59,949
+mais simples entendeu então assim
+
+466
+00:18:59,950 --> 00:19:01,419
+basicamente a gente tem alguns projetos
+
+467
+00:19:01,420 --> 00:19:03,890
+Alguns são experimentos alguns a gente
+
+468
+00:19:03,891 --> 00:19:06,710
+tô vendo futuro arquivar outros vou
+
+469
+00:19:06,711 --> 00:19:08,779
+fazer o próprio catálogo existe a opção
+
+470
+00:19:08,780 --> 00:19:10,759
+da gente fazer de já traseiro
+
+471
+00:19:10,760 --> 00:19:12,410
+automaticamente dentro do próprio Santos
+
+472
+00:19:12,411 --> 00:19:14,480
+mas é preciso Um pouco mais de
+
+473
+00:19:14,481 --> 00:19:16,009
+desenvolvimento a gente precisa ver
+
+474
+00:19:16,010 --> 00:19:17,329
+também a gente quer que o catálogo para
+
+475
+00:19:17,330 --> 00:19:20,890
+mim funcione para componentes
+
+476
+00:19:20,891 --> 00:19:24,019
+de Live Rio Purus que não tem um fã Você
+
+477
+00:19:24,020 --> 00:19:27,680
+ainda tem se o nosso time assim do Celso
+
+478
+00:19:27,681 --> 00:19:29,859
+e o time do
+
+479
+00:19:29,860 --> 00:19:32,539
+Fênix na Live ou a gente trabalha junto
+
+480
+00:19:32,540 --> 00:19:35,059
+para tentar agora já que a gente tá com
+
+481
+00:19:35,060 --> 00:19:36,259
+o mesmo objetivo da gente conseguir
+
+482
+00:19:36,260 --> 00:19:38,450
+direcionar os esforços para ter mais
+
+483
+00:19:38,451 --> 00:19:39,740
+coisas em comú
+
+484
+00:19:39,741 --> 00:19:42,349
+o Jackson e já tem uma introdução ao
+
+485
+00:19:42,350 --> 00:19:45,380
+catálogo é poder explicar um pouco mais
+
+486
+00:19:45,381 --> 00:19:46,609
+sobre ele como que tá o nível de
+
+487
+00:19:46,610 --> 00:19:48,589
+desenvolvimento eu lembro eu lembro
+
+488
+00:19:48,590 --> 00:19:52,000
+quando foi criado o repositório e eu
+
+489
+00:19:52,001 --> 00:19:55,220
+já fiquei ansiosa de Faro uma moto não
+
+490
+00:19:55,221 --> 00:19:57,799
+interessante eu vou acompanhar e acabei
+
+491
+00:19:57,800 --> 00:20:00,829
+deixando ali e queria saber assim como
+
+492
+00:20:00,830 --> 00:20:03,200
+está o nível se as organizações estão
+
+493
+00:20:03,201 --> 00:20:05,509
+funcionando sair dessa não vai dar do no
+
+494
+00:20:05,510 --> 00:20:06,369
+caso
+
+495
+00:20:06,370 --> 00:20:09,019
+horário ideia ela ela é bem interessante
+
+496
+00:20:09,020 --> 00:20:11,299
+para a gente por exemplo utiliza na sim
+
+497
+00:20:11,300 --> 00:20:13,369
+coberta a gente sem Praticamente todo
+
+498
+00:20:13,370 --> 00:20:15,079
+mundo aqui trabalha com o Santos já há
+
+499
+00:20:15,080 --> 00:20:17,119
+algum tempo praticamente todo mundo para
+
+500
+00:20:17,120 --> 00:20:19,759
+conhecer o trabalho já vou ver com o
+
+501
+00:20:19,760 --> 00:20:21,490
+senhor se cara logo
+
+502
+00:20:21,491 --> 00:20:24,529
+o que acontece é o seguinte no momento a
+
+503
+00:20:24,530 --> 00:20:26,390
+gente não tá mais em trazendo muitas
+
+504
+00:20:26,391 --> 00:20:28,519
+funcionalidades novas pelo que eu já
+
+505
+00:20:28,520 --> 00:20:29,660
+disse nossa gente está tentando
+
+506
+00:20:29,661 --> 00:20:33,519
+trabalhar com o time do Fênix loja viu
+
+507
+00:20:33,520 --> 00:20:35,539
+porque eu senti hoje é impossível a
+
+508
+00:20:35,540 --> 00:20:38,000
+gente usar o catalog para componentes do
+
+509
+00:20:38,001 --> 00:20:41,549
+lado viu não existe uma o motivo mas se
+
+510
+00:20:41,550 --> 00:20:44,579
+você for olhar lá os requests lá no
+
+511
+00:20:44,580 --> 00:20:46,289
+Fênix vai ver você vai ver um recorte
+
+512
+00:20:46,290 --> 00:20:50,009
+meu que tá em na sendo desenvolvido que
+
+513
+00:20:50,010 --> 00:20:52,349
+é justamente para introduzir essa
+
+514
+00:20:52,350 --> 00:20:54,660
+linguagem daquela ativa apenas com
+
+515
+00:20:54,661 --> 00:20:56,759
+linguagem daquela Ativa é que você pode
+
+516
+00:20:56,760 --> 00:20:59,460
+ter um catálogo não é porque você sair
+
+517
+00:20:59,461 --> 00:21:02,150
+sem isso você não tem como fazer
+
+518
+00:21:02,151 --> 00:21:04,680
+buscar informações dos componentes de
+
+519
+00:21:04,681 --> 00:21:06,779
+quais são os atributos que esse
+
+520
+00:21:06,780 --> 00:21:08,539
+componente tem quais são os eventos
+
+521
+00:21:08,540 --> 00:21:11,849
+então não dá para fazer o catálogo Então
+
+522
+00:21:11,850 --> 00:21:14,369
+como existe esse interesse também de ter
+
+523
+00:21:14,370 --> 00:21:17,400
+um catálogo Unificado para todos os os
+
+524
+00:21:17,401 --> 00:21:20,970
+componentes já que a tecnologia tá né tá
+
+525
+00:21:20,971 --> 00:21:24,990
+tá sendo ainda o mesmo começo Já está na
+
+526
+00:21:24,991 --> 00:21:27,089
+verdade fazendo que a gente tá o
+
+527
+00:21:27,090 --> 00:21:29,339
+trânsito tá pegando tudo aquilo que foi
+
+528
+00:21:29,340 --> 00:21:31,109
+de conceito do Santos e a gente tá
+
+529
+00:21:31,110 --> 00:21:33,869
+trazendo isso como a PM oficial dentro
+
+530
+00:21:33,870 --> 00:21:36,150
+do filme Incrível Então a partir do
+
+531
+00:21:36,151 --> 00:21:37,289
+momento que a gente trouxe é o grande
+
+532
+00:21:37,290 --> 00:21:39,000
+último passo na verdade essa para ele
+
+533
+00:21:39,001 --> 00:21:41,069
+acabar ativa seja a partir do mês quem
+
+534
+00:21:41,070 --> 00:21:43,529
+tiver decorativa assim como a gente tem
+
+535
+00:21:43,530 --> 00:21:45,660
+o Santos o Santos vai vai passar a
+
+536
+00:21:45,661 --> 00:21:47,339
+utilizar essa mesma aprenda criativa
+
+537
+00:21:47,340 --> 00:21:49,710
+então tudo que o catálogo que precisa
+
+538
+00:21:49,711 --> 00:21:51,710
+para fazer em prospecção dos dados né
+
+539
+00:21:51,711 --> 00:21:53,730
+necessários para o catálogo a gente vai
+
+540
+00:21:53,731 --> 00:21:55,849
+buscar de uma maneira
+
+541
+00:21:55,850 --> 00:21:58,500
+única Então a partir desse momento vai
+
+542
+00:21:58,501 --> 00:22:00,750
+ser possível por exemplo você tem um
+
+543
+00:22:00,751 --> 00:22:02,640
+catálogo de componentes e Misturado seja
+
+544
+00:22:02,641 --> 00:22:04,019
+na verdade você vai ser possível se
+
+545
+00:22:04,020 --> 00:22:06,299
+utilizar numa mesma aplicação componente
+
+546
+00:22:06,300 --> 00:22:08,730
+do Santos e componentes do ágil tá
+
+547
+00:22:08,731 --> 00:22:10,619
+entendendo e inclusive um projeto lá e
+
+548
+00:22:10,620 --> 00:22:12,359
+vivia você pode utilizar vai poder
+
+549
+00:22:12,360 --> 00:22:14,549
+utilizar concurso dos anjos e vice-versa
+
+550
+00:22:14,550 --> 00:22:17,460
+é realmente último passo que tem é
+
+551
+00:22:17,461 --> 00:22:20,339
+atrair declarativa que ia é justamente
+
+552
+00:22:20,340 --> 00:22:22,049
+que eu tô trabalhando agora lá no fim
+
+553
+00:22:22,050 --> 00:22:24,000
+desse lá e viu então a gente tá muito
+
+554
+00:22:24,001 --> 00:22:26,009
+trabalhando nos dois projetos ou seja
+
+555
+00:22:26,010 --> 00:22:29,259
+altera e é complicado às vezes e um
+
+556
+00:22:29,260 --> 00:22:30,940
+pouco frustrante porque tem que ter em
+
+557
+00:22:30,941 --> 00:22:32,409
+certas funcionalidades que eu já tô
+
+558
+00:22:32,410 --> 00:22:35,200
+fazendo pela terceira vez né eu fiz
+
+559
+00:22:35,201 --> 00:22:37,319
+alunos ânsia depois fiz ela não lá Gil
+
+560
+00:22:37,320 --> 00:22:39,669
+aí depois eu tenho que fazer a Lúcia de
+
+561
+00:22:39,670 --> 00:22:41,919
+novo para utilizar o Córrego laje viu
+
+562
+00:22:41,920 --> 00:22:43,599
+agora né para deixar tudo compartilhado
+
+563
+00:22:43,600 --> 00:22:45,599
+Então
+
+564
+00:22:45,600 --> 00:22:48,190
+essa último passa assim temos o último
+
+565
+00:22:48,191 --> 00:22:50,710
+grande passo dado esse último passo a
+
+566
+00:22:50,711 --> 00:22:52,419
+gente vai voltar para o catálogo e ele
+
+567
+00:22:52,420 --> 00:22:54,599
+funciona na última versão
+
+568
+00:22:54,600 --> 00:22:57,339
+eu acho que a última versão Parece que
+
+569
+00:22:57,340 --> 00:23:00,490
+foi lançada do Live View Teve alguma
+
+570
+00:23:00,491 --> 00:23:03,700
+mudança eu acho que no no java script
+
+571
+00:23:03,701 --> 00:23:06,369
+deixou incompatível lá então a gente até
+
+572
+00:23:06,370 --> 00:23:08,259
+um nicho aberto aqui nessa nessa última
+
+573
+00:23:08,260 --> 00:23:10,648
+versão que saiu né para tiver seu do
+
+574
+00:23:10,649 --> 00:23:13,450
+lado e viu então mas ele tá tirando um
+
+575
+00:23:13,451 --> 00:23:16,990
+projeto ativo a gente usa bastante e eu
+
+576
+00:23:16,991 --> 00:23:18,878
+acho super produtivo para você é
+
+577
+00:23:18,879 --> 00:23:20,740
+impressionante como ele ajuda a
+
+578
+00:23:20,741 --> 00:23:22,859
+trabalhar na
+
+579
+00:23:22,860 --> 00:23:25,148
+UTI do componente entendeu quando você
+
+580
+00:23:25,149 --> 00:23:28,609
+fazer outro componente dentro do se você
+
+581
+00:23:28,610 --> 00:23:29,750
+tem que você tá trabalhando lá na
+
+582
+00:23:29,751 --> 00:23:32,480
+empresa você então seja qual for você
+
+583
+00:23:32,481 --> 00:23:34,069
+vai ter uma visão muito de usar o
+
+584
+00:23:34,070 --> 00:23:37,278
+componente e às vezes você você não
+
+585
+00:23:37,279 --> 00:23:39,380
+consegue isolar o componente do restante
+
+586
+00:23:39,381 --> 00:23:41,538
+do sistema quando você tá com catálogo
+
+587
+00:23:41,539 --> 00:23:43,398
+você começa a criar esses exemplos
+
+588
+00:23:43,399 --> 00:23:46,220
+isolados você começa a ter algum site
+
+589
+00:23:46,221 --> 00:23:48,288
+bem interessante sobre como aprender a
+
+590
+00:23:48,289 --> 00:23:51,109
+ser não seja como a pública deveria ser
+
+591
+00:23:51,110 --> 00:23:53,179
+destinada quais são as propriedades O
+
+592
+00:23:53,180 --> 00:23:54,710
+que é como você tiver fazendo testes é o
+
+593
+00:23:54,711 --> 00:23:57,079
+catálogo você você tem que reconstrução
+
+594
+00:23:57,080 --> 00:23:59,778
+você consegue lá pequenos exemplos você
+
+595
+00:23:59,779 --> 00:24:01,759
+tenta dar um playground onde você você
+
+596
+00:24:01,760 --> 00:24:03,888
+tem uma Instância do componente assim
+
+597
+00:24:03,889 --> 00:24:06,849
+como está o ebook você consegue alterar
+
+598
+00:24:06,850 --> 00:24:09,079
+real-time as propriedades né do
+
+599
+00:24:09,080 --> 00:24:11,778
+componente ver como componente reagir
+
+600
+00:24:11,779 --> 00:24:13,970
+visualmente você consegue fazer logo
+
+601
+00:24:13,971 --> 00:24:15,528
+você consegue ver a memória que ele pode
+
+602
+00:24:15,529 --> 00:24:18,048
+estar consumindo no servidor então tem
+
+603
+00:24:18,049 --> 00:24:20,659
+uma série de edifícios que já são bem
+
+604
+00:24:20,660 --> 00:24:22,519
+interessantes e a gente vai continuar
+
+605
+00:24:22,520 --> 00:24:24,440
+sendo mais Fitness assim que a gente
+
+606
+00:24:24,441 --> 00:24:26,880
+definir essa questão da ATI unificada E
+
+607
+00:24:26,881 --> 00:24:29,190
+aí você pode falar um pouco sobre como
+
+608
+00:24:29,191 --> 00:24:32,640
+funciona o passar do surf em tempo de
+
+609
+00:24:32,641 --> 00:24:35,279
+compilação é o o passo na verdade a
+
+610
+00:24:35,280 --> 00:24:37,230
+primeira versão dele a gente utilizava o
+
+611
+00:24:37,231 --> 00:24:40,619
+nível parsec né justamente porque aquela
+
+612
+00:24:40,620 --> 00:24:42,630
+coisa você tem uma maneira mais alto
+
+613
+00:24:42,631 --> 00:24:45,119
+nível de definir um passa foi isso
+
+614
+00:24:45,120 --> 00:24:48,779
+parece muito bacana é até depois ele
+
+615
+00:24:48,780 --> 00:24:50,940
+cobrar o preço né de ser algo e mais
+
+616
+00:24:50,941 --> 00:24:52,460
+alto nível né então
+
+617
+00:24:52,461 --> 00:24:55,079
+a intenção do Santo e sempre foi trazer
+
+618
+00:24:55,080 --> 00:24:56,089
+uma
+
+619
+00:24:56,090 --> 00:24:59,670
+experiência desenvolvimento melhor para
+
+620
+00:24:59,671 --> 00:25:00,990
+você fazer isso você tem que ser muito
+
+621
+00:25:00,991 --> 00:25:03,529
+bom nas mensagens de erro né então você
+
+622
+00:25:03,530 --> 00:25:06,809
+comunismo passa aqui você já tem menos
+
+623
+00:25:06,810 --> 00:25:09,029
+controle sobre isso né Você tem uma
+
+624
+00:25:09,030 --> 00:25:10,319
+maneira mais fácil ver o passe mas
+
+625
+00:25:10,320 --> 00:25:12,869
+quando algo dá errado é bem difícil você
+
+626
+00:25:12,870 --> 00:25:14,700
+dá uma mensagem mais clara para os o
+
+627
+00:25:14,701 --> 00:25:15,680
+olhar
+
+628
+00:25:15,681 --> 00:25:18,599
+essa essa tarde aqui tá faltando fechar
+
+629
+00:25:18,600 --> 00:25:21,029
+olha essa tributo Tem coisa mais
+
+630
+00:25:21,030 --> 00:25:22,500
+específica se precisar de quando você
+
+631
+00:25:22,501 --> 00:25:26,220
+vai mas nas folhas da árvore né que você
+
+632
+00:25:26,221 --> 00:25:28,480
+está criando O mais difícil você fazer
+
+633
+00:25:28,481 --> 00:25:29,829
+isso nem vou passar aqui então tira um
+
+634
+00:25:29,830 --> 00:25:32,170
+ano mais ou menos quando eu comecei a
+
+635
+00:25:32,171 --> 00:25:34,269
+desenvolver o Rick não é o parte do
+
+636
+00:25:34,270 --> 00:25:36,819
+ricms a gente decidiu que ia fazer na
+
+637
+00:25:36,820 --> 00:25:40,380
+mão ou seja já bater mete
+
+638
+00:25:40,381 --> 00:25:45,130
+na veia e fizemos realmente o passo a
+
+639
+00:25:45,131 --> 00:25:46,779
+dosar então fiz mais ou menos os dois a
+
+640
+00:25:46,780 --> 00:25:48,460
+limpar a lama como é muito parecido
+
+641
+00:25:48,461 --> 00:25:49,920
+ricos Constance
+
+642
+00:25:49,921 --> 00:25:52,809
+tinha um poucas diferenças né então
+
+643
+00:25:52,810 --> 00:25:54,549
+basicamente eu fiz os dois passos ao
+
+644
+00:25:54,550 --> 00:25:57,130
+mesmo tempo que realmente assim para
+
+645
+00:25:57,131 --> 00:25:59,079
+quem não conhece achou de a importância
+
+646
+00:25:59,080 --> 00:26:00,059
+de você realmente
+
+647
+00:26:00,060 --> 00:26:02,319
+abrir o leque de opções de conhecer
+
+648
+00:26:02,320 --> 00:26:04,240
+outras tecnologias não é o pato remete
+
+649
+00:26:04,241 --> 00:26:06,910
+em algo que hoje não conseguiram até
+
+650
+00:26:06,911 --> 00:26:08,259
+falei brincando é para comprar nesse
+
+651
+00:26:08,260 --> 00:26:10,500
+cara se você me pedisse para fazer
+
+652
+00:26:10,501 --> 00:26:13,029
+esse parte aqui em qualquer outra
+
+653
+00:26:13,030 --> 00:26:15,009
+linguagem se não tivesse patas net ou
+
+654
+00:26:15,010 --> 00:26:17,650
+simplesmente não faria entendeu eu ia
+
+655
+00:26:17,651 --> 00:26:19,150
+desistir a mãe fica impressionante como
+
+656
+00:26:19,151 --> 00:26:22,000
+é simples você fazer o passa o em
+
+657
+00:26:22,001 --> 00:26:24,690
+Orlândia ou minha lix do zero entendeu
+
+658
+00:26:24,691 --> 00:26:26,470
+impressionante com mais você fica com
+
+659
+00:26:26,471 --> 00:26:28,849
+poder Ah entendeu então você realmente
+
+660
+00:26:28,850 --> 00:26:32,480
+cada cada passo ali do passa cada tá
+
+661
+00:26:32,481 --> 00:26:34,700
+dando ó que você vai criando ali na seus
+
+662
+00:26:34,701 --> 00:26:36,799
+que total controle você sabe onde é que
+
+663
+00:26:36,800 --> 00:26:39,339
+você tá Você sabe dá uma mensagem muito
+
+664
+00:26:39,340 --> 00:26:41,900
+a específica para o usuário e realmente
+
+665
+00:26:41,901 --> 00:26:46,000
+melhores quem usou laje Wars II do ricms
+
+666
+00:26:46,001 --> 00:26:49,009
+sabe o quanto era problemático se você é
+
+667
+00:26:49,010 --> 00:26:52,339
+raças vezes o esqueci de fechar uma div
+
+668
+00:26:52,340 --> 00:26:55,160
+e o Advil simplesmente enlouqueceu
+
+669
+00:26:55,161 --> 00:26:56,808
+começar a atualizar parte da tela que
+
+670
+00:26:56,809 --> 00:26:57,920
+você não tava esperando eu tinha
+
+671
+00:26:57,921 --> 00:26:59,960
+mensagem de erro não tinha nada então
+
+672
+00:26:59,961 --> 00:27:02,808
+acho que o grande esse ano depois que me
+
+673
+00:27:02,809 --> 00:27:04,910
+deixa muito orgulhoso de poder trazer
+
+674
+00:27:04,911 --> 00:27:07,069
+isso para comunidade porque eu assim eu
+
+675
+00:27:07,070 --> 00:27:09,470
+sofri Na verdade o Santos foi a resolver
+
+676
+00:27:09,471 --> 00:27:11,690
+isso né então agora mesmo que não usa
+
+677
+00:27:11,691 --> 00:27:13,009
+some você tem a oportunidade de pelo
+
+678
+00:27:13,010 --> 00:27:15,589
+menos ter esse mínimo de segurança na
+
+679
+00:27:15,590 --> 00:27:18,440
+hora de desenvolver ela que eu gostei
+
+680
+00:27:18,441 --> 00:27:19,750
+bastante de ter feito
+
+681
+00:27:19,751 --> 00:27:22,059
+E o restante experiência realmente é uma
+
+682
+00:27:22,060 --> 00:27:24,069
+coisa que eu vou fazer passa vai dar
+
+683
+00:27:24,070 --> 00:27:26,619
+muito trabalho essa coisa de né Essa
+
+684
+00:27:26,620 --> 00:27:28,119
+coisa para fazer na universidade ali que
+
+685
+00:27:28,120 --> 00:27:30,549
+a gente tá aprendendo né ninguém usa
+
+686
+00:27:30,550 --> 00:27:32,799
+mais mas a experiência foi muito boa é
+
+687
+00:27:32,800 --> 00:27:35,170
+muito simples recomendo você tiver tempo
+
+688
+00:27:35,171 --> 00:27:36,730
+livre assim quiser fazer uma brincadeira
+
+689
+00:27:36,731 --> 00:27:38,289
+fazer um parte de qualquer coisa muito
+
+690
+00:27:38,290 --> 00:27:40,329
+legal assim pelo menos com ele que
+
+691
+00:27:40,330 --> 00:27:43,529
+usando quarta remete
+
+692
+00:27:43,530 --> 00:27:46,779
+é uma coisa legal também dessa época é
+
+693
+00:27:46,780 --> 00:27:49,720
+que não não tinha achei ainda não tem
+
+694
+00:27:49,721 --> 00:27:52,119
+mas era pior formatação dentro do sítio
+
+695
+00:27:52,120 --> 00:27:55,359
+então para você achar qual Nise você não
+
+696
+00:27:55,360 --> 00:27:58,920
+fechou é muito divertido só que não
+
+697
+00:27:58,921 --> 00:28:01,990
+era outras coisas assim quando eu falei
+
+698
+00:28:01,991 --> 00:28:03,369
+lá nessa experiência né de fazer o
+
+699
+00:28:03,370 --> 00:28:06,279
+dashboard e assim primeira claro assim
+
+700
+00:28:06,280 --> 00:28:07,869
+há dois anos e meia hora claro que o
+
+701
+00:28:07,870 --> 00:28:10,269
+Edson não era adequado para trabalhar
+
+702
+00:28:10,270 --> 00:28:13,480
+com o esse modelo né de estolagem joelho
+
+703
+00:28:13,481 --> 00:28:15,039
+é muito da pendentes você tem instalado
+
+704
+00:28:15,040 --> 00:28:17,170
+no servidor e esse estado um servidor em
+
+705
+00:28:17,171 --> 00:28:22,690
+uma peia é nós e do html no Browser
+
+706
+00:28:22,691 --> 00:28:25,039
+então para você manter esse estado
+
+707
+00:28:25,040 --> 00:28:27,559
+consistente você precisa ter a sua
+
+708
+00:28:27,560 --> 00:28:30,619
+estrutura no HTML completamente validada
+
+709
+00:28:30,620 --> 00:28:34,640
+não fica simplesmente impossível então é
+
+710
+00:28:34,641 --> 00:28:39,079
+todo esse esforço de fazer o parser de
+
+711
+00:28:39,080 --> 00:28:42,079
+validar a estrutura da do HTML era
+
+712
+00:28:42,080 --> 00:28:43,670
+importantíssimo tanto aqui o Santos ele
+
+713
+00:28:43,671 --> 00:28:47,210
+tem formata desde a primeira versão na
+
+714
+00:28:47,211 --> 00:28:48,980
+primeira versão que a gente lançou o
+
+715
+00:28:48,981 --> 00:28:50,480
+povo entrou em contato a tua cara como é
+
+716
+00:28:50,481 --> 00:28:51,799
+que eu poderia fazer um formato de sódio
+
+717
+00:28:51,800 --> 00:28:55,490
+o passa tá pronto roda formata você vai
+
+718
+00:28:55,491 --> 00:28:58,759
+ter todos os tokens depois é só sair só
+
+719
+00:28:58,760 --> 00:29:03,319
+sair o ano lendo os toques e formatando
+
+720
+00:29:03,320 --> 00:29:07,400
+o quanto o que nunca Conseguiram fazer
+
+721
+00:29:07,401 --> 00:29:09,019
+passa poder mudar para fazer realmente
+
+722
+00:29:09,020 --> 00:29:12,380
+ele ele não tinha uma estrutura que era
+
+723
+00:29:12,381 --> 00:29:14,329
+possível fazer um pássaro não seja ele
+
+724
+00:29:14,330 --> 00:29:17,720
+misturava HTML com ele e se vocês aí
+
+725
+00:29:17,721 --> 00:29:19,829
+abrindo você não tinha você geral Como
+
+726
+00:29:19,830 --> 00:29:22,140
+pode um HTML desestruturadas seja Na
+
+727
+00:29:22,141 --> 00:29:24,869
+verdade é um pedaço de texto preços
+
+728
+00:29:24,870 --> 00:29:27,000
+concatenado mas é impossível você tem
+
+729
+00:29:27,001 --> 00:29:30,150
+isso então no ricms agora não foi
+
+730
+00:29:30,151 --> 00:29:32,130
+possível as pessoas façam Em um formato
+
+731
+00:29:32,131 --> 00:29:34,619
+é porque você tem agora uma estrutura
+
+732
+00:29:34,620 --> 00:29:35,759
+onde você realmente você consegue
+
+733
+00:29:35,760 --> 00:29:38,099
+Navegar por essa instrutor e você sabe
+
+734
+00:29:38,100 --> 00:29:39,269
+que ela é validar Então você consegue
+
+735
+00:29:39,270 --> 00:29:44,190
+identificar os nós O que é né então é é
+
+736
+00:29:44,191 --> 00:29:46,349
+algo realmente que não eu acho que ele
+
+737
+00:29:46,350 --> 00:29:48,259
+conseguiu sobreviver muito nesses anos
+
+738
+00:29:48,260 --> 00:29:50,990
+sem isso entendeu então
+
+739
+00:29:50,991 --> 00:29:53,429
+acho que sofreu menos que aderiu ao
+
+740
+00:29:53,430 --> 00:29:55,259
+selfie lá atrás de sofreu mesmos com
+
+741
+00:29:55,260 --> 00:29:58,319
+isso Marlos é o que que você espera para
+
+742
+00:29:58,320 --> 00:30:02,058
+o futuro dos homens Olha eu acho que
+
+743
+00:30:02,059 --> 00:30:04,079
+assistência que a gente entrar nessa
+
+744
+00:30:04,080 --> 00:30:06,309
+questão da ATI
+
+745
+00:30:06,310 --> 00:30:09,069
+e é Unificado né dona da parede
+
+746
+00:30:09,070 --> 00:30:10,990
+decorativa Porque a partir daí a
+
+747
+00:30:10,991 --> 00:30:14,400
+intenção da gente é focar simplesmente o
+
+748
+00:30:14,401 --> 00:30:16,210
+experiência desenvolvimento ou seja
+
+749
+00:30:16,211 --> 00:30:19,900
+focar e na melhorar a linguagem de
+
+750
+00:30:19,901 --> 00:30:21,309
+template não seja trazendo inclusive
+
+751
+00:30:21,310 --> 00:30:23,279
+mais
+
+752
+00:30:23,280 --> 00:30:25,089
+facilidade entendeu porque tem muita
+
+753
+00:30:25,090 --> 00:30:27,430
+coisa que assim o fim de celular Deus
+
+754
+00:30:27,431 --> 00:30:29,130
+atrás um
+
+755
+00:30:29,131 --> 00:30:30,910
+melhoria na produtividade imensa
+
+756
+00:30:30,911 --> 00:30:33,730
+entendeu porque muito das coisas que são
+
+757
+00:30:33,731 --> 00:30:35,400
+complexas em desenvolvimento web
+
+758
+00:30:35,401 --> 00:30:37,299
+pessoalmente para você tem que me dar a
+
+759
+00:30:37,300 --> 00:30:41,339
+cor aplicações ricas não é com muita
+
+760
+00:30:41,340 --> 00:30:44,140
+interação com o usuário comunicação
+
+761
+00:30:44,141 --> 00:30:46,750
+concorrente conversando ativar o serviço
+
+762
+00:30:46,751 --> 00:30:50,549
+Bis você recebe o muda de graça já da do
+
+763
+00:30:50,550 --> 00:30:53,799
+erlang na máquina virtual depois com o
+
+764
+00:30:53,800 --> 00:30:56,079
+elenco em cima depois o finito vai vir
+
+765
+00:30:56,080 --> 00:30:57,549
+então você já tem muita coisa que você
+
+766
+00:30:57,550 --> 00:30:59,940
+consegue trabalhar a parte essas coisas
+
+767
+00:30:59,941 --> 00:31:01,410
+no dia a dia que eu acho que meio que
+
+768
+00:31:01,411 --> 00:31:03,329
+mata um pouco essa experiência eu acho
+
+769
+00:31:03,330 --> 00:31:05,730
+que uma delas e às vezes você repetir
+
+770
+00:31:05,731 --> 00:31:08,250
+muitas coisas que são as vezes meu
+
+771
+00:31:08,251 --> 00:31:10,349
+burocrática para fazer entendeu ou
+
+772
+00:31:10,350 --> 00:31:12,319
+linguagem de template aqui
+
+773
+00:31:12,320 --> 00:31:15,809
+por mais que a gente tentou aproximar
+
+774
+00:31:15,810 --> 00:31:18,660
+ela do que é o surf se ela tem uma
+
+775
+00:31:18,661 --> 00:31:20,579
+alimentação vai ter sempre alimentação
+
+776
+00:31:20,580 --> 00:31:22,500
+de que ela tem que manter um pé meio que
+
+777
+00:31:22,501 --> 00:31:25,559
+na sua linguagem mãe que é o link então
+
+778
+00:31:25,560 --> 00:31:27,720
+isso enterro de estratégia de futuro
+
+779
+00:31:27,721 --> 00:31:29,819
+acho que eu já vi isso em outras
+
+780
+00:31:29,820 --> 00:31:31,829
+tecnologias né Eu já vi por exemplo PHP
+
+781
+00:31:31,830 --> 00:31:34,769
+ele tinha só linguagem canônica hoje
+
+782
+00:31:34,770 --> 00:31:35,940
+Praticamente você não vê mais ninguém
+
+783
+00:31:35,941 --> 00:31:38,000
+usando ela né você já tem outras
+
+784
+00:31:38,001 --> 00:31:41,069
+linguagem template que são usadas e são
+
+785
+00:31:41,070 --> 00:31:44,130
+mais populares a gente viu o J5 é também
+
+786
+00:31:44,131 --> 00:31:45,720
+que ela tem uma linguagem de praticando
+
+787
+00:31:45,721 --> 00:31:46,980
+única eu acho que todas as linguagens
+
+788
+00:31:46,981 --> 00:31:49,980
+que elas são canônicas da tecnologia
+
+789
+00:31:49,981 --> 00:31:53,099
+elas tendem a ser menos flexível andares
+
+790
+00:31:53,100 --> 00:31:55,410
+tem que ser menos flexível né porque
+
+791
+00:31:55,411 --> 00:31:57,000
+elas têm uma alimentação muito grande e
+
+792
+00:31:57,001 --> 00:31:58,539
+manter essa compatibilidade
+
+793
+00:31:58,540 --> 00:32:00,640
+bom então a gente vai se inclusive
+
+794
+00:32:00,641 --> 00:32:02,920
+várias tecnologias né como eu tô dizendo
+
+795
+00:32:02,921 --> 00:32:04,630
+Então acho que o céu se ele tem um cabo
+
+796
+00:32:04,631 --> 00:32:07,809
+o potencial maior como ele é
+
+797
+00:32:07,810 --> 00:32:09,460
+independente disso você já gente não
+
+798
+00:32:09,461 --> 00:32:11,609
+trabalha com essa coisa de
+
+799
+00:32:11,610 --> 00:32:13,990
+template espaciais né se você for pegar
+
+800
+00:32:13,991 --> 00:32:17,619
+o cheque ele realmente não entendi nada
+
+801
+00:32:17,620 --> 00:32:19,990
+da estrutura o ricos ele já entendi da
+
+802
+00:32:19,991 --> 00:32:22,690
+estrutura mas isso dentro ali da área
+
+803
+00:32:22,691 --> 00:32:24,819
+dos atributos né vocês na área ele do
+
+804
+00:32:24,820 --> 00:32:27,130
+componente dos atributos o resto ele
+
+805
+00:32:27,131 --> 00:32:28,990
+continua meio ainda parecido com o rico
+
+806
+00:32:28,991 --> 00:32:31,089
+se eu quiser fazer um condicional eu
+
+807
+00:32:31,090 --> 00:32:33,670
+abro ali um é like se não e faça no
+
+808
+00:32:33,671 --> 00:32:37,059
+começo a o do condicional depois de um
+
+809
+00:32:37,060 --> 00:32:39,460
+gesto um bloco A lei de Hits e depois eu
+
+810
+00:32:39,461 --> 00:32:41,200
+quiser fazer um é o seu eu abro de novo
+
+811
+00:32:41,201 --> 00:32:44,049
+negócio mas sabe helix de novo com isso
+
+812
+00:32:44,050 --> 00:32:45,160
+Você tem uma série de restrições
+
+813
+00:32:45,161 --> 00:32:48,190
+entendeu então você tá ali é ele que se
+
+814
+00:32:48,191 --> 00:32:49,420
+mas não vale não é você não pode fazer
+
+815
+00:32:49,421 --> 00:32:51,730
+um pai ficou o bloco entender você não
+
+816
+00:32:51,731 --> 00:32:53,470
+pode criar variáveis alguns locais você
+
+817
+00:32:53,471 --> 00:32:55,750
+não pode por exemplo todo dia que você
+
+818
+00:32:55,751 --> 00:32:59,079
+vai fazer o você vai querer e
+
+819
+00:32:59,080 --> 00:33:02,240
+de repente renderizar uma lista de coisa
+
+820
+00:33:02,241 --> 00:33:04,220
+você tem que ir através dessa lista Você
+
+821
+00:33:04,221 --> 00:33:06,829
+não pode usar o Enem Inep para fazer
+
+822
+00:33:06,830 --> 00:33:09,200
+isso porque você não pode criar uma
+
+823
+00:33:09,201 --> 00:33:12,039
+função anônima e passar um bloco de Hits
+
+824
+00:33:12,040 --> 00:33:14,960
+né Você tem que usar o foco para gente
+
+825
+00:33:14,961 --> 00:33:16,190
+então tudo isso acho que traz mais
+
+826
+00:33:16,191 --> 00:33:19,160
+complexidade acaba que o rico se ele tem
+
+827
+00:33:19,161 --> 00:33:20,900
+que meio que entender dos dois entendeu
+
+828
+00:33:20,901 --> 00:33:23,480
+E isso vai limitar um pouco a evolução
+
+829
+00:33:23,481 --> 00:33:25,099
+dele na minha opinião que eu já vi isso
+
+830
+00:33:25,100 --> 00:33:26,450
+acontecer outras engordam acho quando
+
+831
+00:33:26,451 --> 00:33:28,849
+você tem uma linguagem de template né
+
+832
+00:33:28,850 --> 00:33:32,900
+como só desce L específica para São
+
+833
+00:33:32,901 --> 00:33:34,339
+Domingos diferença na minha opinião o
+
+834
+00:33:34,340 --> 00:33:35,690
+ele que isso para mim é uma linguagem
+
+835
+00:33:35,691 --> 00:33:38,480
+genérica o sejam linguagem que você vai
+
+836
+00:33:38,481 --> 00:33:40,160
+para resolver vários problemas com
+
+837
+00:33:40,161 --> 00:33:42,079
+qualquer outra linguagem América como o
+
+838
+00:33:42,080 --> 00:33:43,789
+Java com você mais fácil essa linguagem
+
+839
+00:33:43,790 --> 00:33:46,029
+genéricas no
+
+840
+00:33:46,030 --> 00:33:49,549
+Brasil ou seja a linguagem template ela
+
+841
+00:33:49,550 --> 00:33:51,519
+não precisa ser tão
+
+842
+00:33:51,520 --> 00:33:54,049
+genérica como ela é você já não precisa
+
+843
+00:33:54,050 --> 00:33:55,910
+Te todas as funcionalidades basicamente
+
+844
+00:33:55,911 --> 00:33:59,819
+você precisa condicional o mulheres Oi e
+
+845
+00:33:59,820 --> 00:34:01,950
+o resto é melhorar a experiência dos
+
+846
+00:34:01,951 --> 00:34:03,900
+usuários com atributos maneira de fazer
+
+847
+00:34:03,901 --> 00:34:05,509
+atributo
+
+848
+00:34:05,510 --> 00:34:08,400
+açúcar sintático onde você conseguir
+
+849
+00:34:08,401 --> 00:34:09,510
+entregar para melhorar os semitas
+
+850
+00:34:09,511 --> 00:34:12,480
+experiência não acho que Lago grande
+
+851
+00:34:12,481 --> 00:34:14,579
+diferencial na verdade vai ser esse ou
+
+852
+00:34:14,580 --> 00:34:17,730
+seja enquanto no Rio Kwai meio que é
+
+853
+00:34:17,731 --> 00:34:19,340
+obrigado a manter essa compatibilidade
+
+854
+00:34:19,341 --> 00:34:21,510
+inclusive às vezes para fazer coisas no
+
+855
+00:34:21,511 --> 00:34:24,119
+ricms não não é a primeira vez já várias
+
+856
+00:34:24,120 --> 00:34:26,940
+vezes é preciso de você mudar o próprio
+
+857
+00:34:26,941 --> 00:34:29,489
+o próprio Mix Gonçalves uma nova versão
+
+858
+00:34:29,490 --> 00:34:32,760
+é like para você entre vários momentos
+
+859
+00:34:32,761 --> 00:34:35,219
+dessa entendeu porque você tem esse
+
+860
+00:34:35,220 --> 00:34:37,168
+acoplamento então uma coisa que eu não
+
+861
+00:34:37,169 --> 00:34:38,460
+quero paz eu quero que vocês Olha tu
+
+862
+00:34:38,461 --> 00:34:40,139
+ligaste a linguagem frente completamente
+
+863
+00:34:40,140 --> 00:34:41,909
+independente tudo que eu posso utilizar
+
+864
+00:34:41,910 --> 00:34:43,440
+em ali que isso aqui são expressões
+
+865
+00:34:43,441 --> 00:34:46,230
+essas expressões Elas têm que ser
+
+866
+00:34:46,231 --> 00:34:48,030
+completas entendeu então eu mandei muito
+
+867
+00:34:48,031 --> 00:34:50,010
+mais simples do que você tem essas
+
+868
+00:34:50,011 --> 00:34:52,380
+expressões parciais entendeu aí você
+
+869
+00:34:52,381 --> 00:34:55,409
+utiliza aquele menor que percentual
+
+870
+00:34:55,410 --> 00:34:56,820
+igual às vezes tem um igual às vezes não
+
+871
+00:34:56,821 --> 00:34:59,590
+têm o igual já viu e quando é o melhor
+
+872
+00:34:59,591 --> 00:35:02,199
+quando eu estava tentando ensinar a
+
+873
+00:35:02,200 --> 00:35:04,480
+Fênix linguagem te pedir uma coisa que
+
+874
+00:35:04,481 --> 00:35:06,909
+as pessoas normalmente quem vinha que
+
+875
+00:35:06,910 --> 00:35:09,699
+não era acostumado com o colher que
+
+876
+00:35:09,700 --> 00:35:11,559
+realmente da que estava porque era era
+
+877
+00:35:11,560 --> 00:35:13,119
+meu complexo até ficar misturando sempre
+
+878
+00:35:13,120 --> 00:35:15,550
+esses duas esses dois mundos entendeu
+
+879
+00:35:15,551 --> 00:35:17,289
+então eu acho que esse vai ser o grande
+
+880
+00:35:17,290 --> 00:35:20,019
+diferencial para os dois e o melhor aqui
+
+881
+00:35:20,020 --> 00:35:23,260
+gostei a questão do poder de escolha em
+
+882
+00:35:23,261 --> 00:35:25,300
+outras tecnologias Às vezes você nem tem
+
+883
+00:35:25,301 --> 00:35:27,610
+esse poder de ter escolha em relação tem
+
+884
+00:35:27,611 --> 00:35:30,219
+cliente né que você usa Então eu acho
+
+885
+00:35:30,220 --> 00:35:31,980
+que quando a gente realmente unificar o
+
+886
+00:35:31,981 --> 00:35:34,869
+o a p i vai ser bem interessante porque
+
+887
+00:35:34,870 --> 00:35:36,820
+cada usuário vai poder escolher outra
+
+888
+00:35:36,821 --> 00:35:39,070
+linguagem ter vez que ele quiser e esses
+
+889
+00:35:39,071 --> 00:35:40,630
+componentes você tão importante
+
+890
+00:35:40,631 --> 00:35:42,820
+compatível isso em qualquer uma delas
+
+891
+00:35:42,821 --> 00:35:44,769
+Então acho que é o maior ganho que você
+
+892
+00:35:44,770 --> 00:35:46,210
+pode ter isso da Liberdade na hora de
+
+893
+00:35:46,211 --> 00:35:49,000
+escolher a tecnologia que você quer
+
+894
+00:35:49,001 --> 00:35:51,940
+utilizar boa entendeu no seu Face com um
+
+895
+00:35:51,941 --> 00:35:54,489
+projeto open-source causa de inteira
+
+896
+00:35:54,490 --> 00:35:56,949
+contribuir O que você acha que é
+
+897
+00:35:56,950 --> 00:35:59,230
+necessário preciso eu
+
+898
+00:35:59,231 --> 00:36:01,690
+acho que a maneira mais simples é
+
+899
+00:36:01,691 --> 00:36:05,480
+começar a utilizar Nós vai no Website da
+
+900
+00:36:05,481 --> 00:36:08,989
+uma olhada ver os conceitos no nosso
+
+901
+00:36:08,990 --> 00:36:12,889
+bitgamer a gente pega sempre e várias
+
+902
+00:36:12,890 --> 00:36:14,780
+discussões em alguns nichos lá que são
+
+903
+00:36:14,781 --> 00:36:16,519
+abertos basicamente para discussões de
+
+904
+00:36:16,520 --> 00:36:17,829
+novas funcionalidades
+
+905
+00:36:17,830 --> 00:36:20,900
+e muita maneira para ajudar a tem muita
+
+906
+00:36:20,901 --> 00:36:22,869
+coisa que a gente quer
+
+907
+00:36:22,870 --> 00:36:26,510
+ainda apresentar aí a gente tem um canal
+
+908
+00:36:26,511 --> 00:36:30,170
+no Slack também é lá do ele que você que
+
+909
+00:36:30,171 --> 00:36:33,079
+a gente troca muito a ideia também então
+
+910
+00:36:33,080 --> 00:36:36,739
+você tá iniciando quiser entrar lá tem
+
+911
+00:36:36,740 --> 00:36:39,530
+que ser para mim para ajudar você e eu
+
+912
+00:36:39,531 --> 00:36:40,940
+acho que principalmente quem não quem
+
+913
+00:36:40,941 --> 00:36:42,590
+nunca trabalhou com Finnick entendeu que
+
+914
+00:36:42,591 --> 00:36:44,869
+nunca trabalhou até com ele se pisar
+
+915
+00:36:44,870 --> 00:36:48,110
+iniciar aconselho muito acho que são são
+
+916
+00:36:48,111 --> 00:36:51,230
+tecnologias que que se você utilizar
+
+917
+00:36:51,231 --> 00:36:53,690
+dificilmente você você vai olhar na
+
+918
+00:36:53,691 --> 00:36:55,099
+mesma maneira as outras tecnologias
+
+919
+00:36:55,100 --> 00:36:57,889
+entendeu sim tem tenho Achei um grande
+
+920
+00:36:57,890 --> 00:37:01,309
+potencial é realmente ajudar é
+
+921
+00:37:01,310 --> 00:37:03,510
+só o que a gente quer nós a gente quer
+
+922
+00:37:03,511 --> 00:37:06,500
+conseguir justamente mais pessoas que
+
+923
+00:37:06,501 --> 00:37:09,300
+tenham interesse realmente mudar essa
+
+924
+00:37:09,301 --> 00:37:10,409
+maneira que a gente está hoje vamos
+
+925
+00:37:10,410 --> 00:37:12,809
+trazer um pouco usar alguns passos atrás
+
+926
+00:37:12,810 --> 00:37:14,849
+em relação aquilo que a gente trouxe
+
+927
+00:37:14,850 --> 00:37:17,519
+para o front-end entendeu E e deixar
+
+928
+00:37:17,520 --> 00:37:20,010
+mais pertinho ali do Servidor Ótica o
+
+929
+00:37:20,011 --> 00:37:23,070
+Flick Flagyl consórcio uma estética
+
+930
+00:37:23,071 --> 00:37:25,949
+perfeita para quem tá nessa nessa
+
+931
+00:37:25,950 --> 00:37:28,050
+condição entendeu para quem concorda que
+
+932
+00:37:28,051 --> 00:37:30,360
+a front a gente talvez em passar um
+
+933
+00:37:30,361 --> 00:37:32,849
+pouco do limite tem soluções melhor quem
+
+934
+00:37:32,850 --> 00:37:34,650
+quiser dar uma olhada e tirar suas
+
+935
+00:37:34,651 --> 00:37:36,210
+próprias conclusões a gente está
+
+936
+00:37:36,211 --> 00:37:39,780
+disponível para ajudar embarcar a é uma
+
+937
+00:37:39,781 --> 00:37:42,210
+pergunta aqui né É de um dos novos eu
+
+938
+00:37:42,211 --> 00:37:46,800
+vim do Felipe São Paulo acássias grande
+
+939
+00:37:46,801 --> 00:37:47,750
+ferro
+
+940
+00:37:47,751 --> 00:37:50,880
+ele o fios né diz está curioso para
+
+941
+00:37:50,881 --> 00:37:53,309
+saber o que você malas achou da reflexão
+
+942
+00:37:53,310 --> 00:37:57,239
+do ricms né e se isso está afetando de
+
+943
+00:37:57,240 --> 00:37:59,730
+alguma forma o desenvolvimento eu sei se
+
+944
+00:37:59,731 --> 00:38:04,559
+ele diz sim ao se o surf está
+
+945
+00:38:04,560 --> 00:38:08,590
+aproveitando alguma ideia né de volta do
+
+946
+00:38:08,591 --> 00:38:11,670
+ricms para o sucesso já que o
+
+947
+00:38:11,671 --> 00:38:14,170
+agente viu que o sucesso contribuiu
+
+948
+00:38:14,171 --> 00:38:17,050
+bastante né para para essa evolução do
+
+949
+00:38:17,051 --> 00:38:20,880
+Live ver o dos templates é suportados no
+
+950
+00:38:20,881 --> 00:38:26,349
+Fênix mas o que é que a gente em caso
+
+951
+00:38:26,350 --> 00:38:28,780
+você né comunidade do Sul fez estão
+
+952
+00:38:28,781 --> 00:38:32,469
+recebendo de volta né Depois da se
+
+953
+00:38:32,470 --> 00:38:34,929
+entrega né olha o que a gente assim em
+
+954
+00:38:34,930 --> 00:38:36,849
+relação ao repercussão Carol acho que
+
+955
+00:38:36,850 --> 00:38:38,590
+ela foi muito boa Ainda bem né assim
+
+956
+00:38:38,591 --> 00:38:41,110
+porque eu ia ficar muito chateado afinal
+
+957
+00:38:41,111 --> 00:38:42,550
+de contas eu que desenvolveu o Rick tá
+
+958
+00:38:42,551 --> 00:38:44,380
+então a gente vai ficar bastante
+
+959
+00:38:44,381 --> 00:38:46,570
+chateado Se não tivesse tido com boa
+
+960
+00:38:46,571 --> 00:38:49,570
+receptividade entendeu em relação ao
+
+961
+00:38:49,571 --> 00:38:51,929
+Santos é como eu disse eu acho que eles
+
+962
+00:38:51,930 --> 00:38:54,480
+e em relação ao que a gente pode trazer
+
+963
+00:38:54,481 --> 00:38:56,400
+de volta a andar em JP não seja toda
+
+964
+00:38:56,401 --> 00:38:58,559
+toda funcionalidade que a gente tira do
+
+965
+00:38:58,560 --> 00:39:00,960
+Santos e coloca imagem viu no córrego
+
+966
+00:39:00,961 --> 00:39:03,360
+laje viu é menos código que a gente tem
+
+967
+00:39:03,361 --> 00:39:05,719
+que manter no Santos entendeu então
+
+968
+00:39:05,720 --> 00:39:08,670
+eu acho que o maior proveito acho que é
+
+969
+00:39:08,671 --> 00:39:11,030
+por isso que eu tenho
+
+970
+00:39:11,031 --> 00:39:13,920
+essa empolgação de contribuir trazer
+
+971
+00:39:13,921 --> 00:39:17,369
+esses conceitos para o Advil justamente
+
+972
+00:39:17,370 --> 00:39:20,219
+porque na verdade a gente do time do
+
+973
+00:39:20,220 --> 00:39:22,800
+Santos é beneficiado com isso entendeu a
+
+974
+00:39:22,801 --> 00:39:24,889
+gente teve que fazer muita coisa na mão
+
+975
+00:39:24,890 --> 00:39:28,409
+no samsic agora tá no que a gente
+
+976
+00:39:28,410 --> 00:39:30,300
+conseguiu trazer para o código Live
+
+977
+00:39:30,301 --> 00:39:32,099
+Então vai ser muito melhor pra gente
+
+978
+00:39:32,100 --> 00:39:33,809
+manter você gente vai realmente tirar
+
+979
+00:39:33,810 --> 00:39:36,329
+muita coisa do surf já estão já estamos
+
+980
+00:39:36,330 --> 00:39:37,769
+tirando já estão usando o mesmo modelo
+
+981
+00:39:37,770 --> 00:39:40,250
+então isso melhor
+
+982
+00:39:40,251 --> 00:39:42,210
+performance Ou seja você não tem uma
+
+983
+00:39:42,211 --> 00:39:44,849
+camada mais lá então a câmara que você
+
+984
+00:39:44,850 --> 00:39:46,829
+tem até de template mas essa camada
+
+985
+00:39:46,830 --> 00:39:49,110
+depois de compilação é a mesma entendeu
+
+986
+00:39:49,111 --> 00:39:51,119
+seja em jantar e não tem diferença de
+
+987
+00:39:51,120 --> 00:39:53,940
+você usar a ilusão rico
+
+988
+00:39:53,941 --> 00:39:56,139
+seja o parça ele roda um tempo de
+
+989
+00:39:56,140 --> 00:39:59,998
+compilação vai gerar código
+
+990
+00:40:00,179 --> 00:40:03,099
+vai jogar código que tinha que eu fixo
+
+991
+00:40:03,100 --> 00:40:04,599
+entendi entendeu se ele vai gerar código
+
+992
+00:40:04,600 --> 00:40:07,630
+que que eu Engine um grande então eu
+
+993
+00:40:07,631 --> 00:40:09,909
+acho que o que a gente ganha a gente
+
+994
+00:40:09,910 --> 00:40:12,460
+notícia é tempo para poder trabalhar em
+
+995
+00:40:12,461 --> 00:40:13,539
+coisas que a gente acha mais importante
+
+996
+00:40:13,540 --> 00:40:16,059
+e vejo-te sempre que ficar nessa briga
+
+997
+00:40:16,060 --> 00:40:18,250
+de compatibilidade não seja lá e
+
+998
+00:40:18,251 --> 00:40:19,900
+violência uma coisa a gente já tem essa
+
+999
+00:40:19,901 --> 00:40:22,329
+coisa tipo um pouco diferente como é que
+
+1000
+00:40:22,330 --> 00:40:24,190
+casa isso isso é muito trabalho para
+
+1001
+00:40:24,191 --> 00:40:27,130
+fazer e falando as coisas que mais assim
+
+1002
+00:40:27,131 --> 00:40:28,829
+nos últimos meses
+
+1003
+00:40:28,830 --> 00:40:31,179
+tomou tempo entendeu foi como eu disse
+
+1004
+00:40:31,180 --> 00:40:33,519
+antes o que é feito de uma maneira não
+
+1005
+00:40:33,520 --> 00:40:34,659
+existe vamos lá e viu aí depois a gente
+
+1006
+00:40:34,660 --> 00:40:38,789
+tem que fazer um elogio que pudesse ser
+
+1007
+00:40:38,790 --> 00:40:41,440
+vou mandar que pudessem reaproveitável
+
+1008
+00:40:41,441 --> 00:40:44,500
+por outras tecnologias e agora a gente
+
+1009
+00:40:44,501 --> 00:40:46,119
+tem agora que adaptar o Santos entendeu
+
+1010
+00:40:46,120 --> 00:40:48,280
+então ela 50.7 qual é a versão que a
+
+1011
+00:40:48,281 --> 00:40:51,920
+gente conseguiu realmente é deixar isso
+
+1012
+00:40:51,921 --> 00:40:54,769
+e hoje o 70.7 é totalmente compatível
+
+1013
+00:40:54,770 --> 00:40:56,650
+com as funcionalidades do Brasil
+
+1014
+00:40:56,651 --> 00:40:59,960
+incluindo o módulo de r&s né toda aquela
+
+1015
+00:40:59,961 --> 00:41:01,780
+tudo aquilo que foi
+
+1016
+00:41:01,781 --> 00:41:04,548
+introduzido nas últimas versões do Live
+
+1017
+00:41:04,549 --> 00:41:08,780
+View e E aí vai ser assim agora vai ser
+
+1018
+00:41:08,781 --> 00:41:10,159
+muito mais simples eu quanto mais a
+
+1019
+00:41:10,160 --> 00:41:12,798
+gente tira do Surf se no Core do modelo
+
+1020
+00:41:12,799 --> 00:41:16,099
+de componente se joga para lá mas tempo
+
+1021
+00:41:16,100 --> 00:41:18,400
+a gente vai ter para trabalhar
+
+1022
+00:41:18,401 --> 00:41:22,548
+na linguagem template em bibliotecas
+
+1023
+00:41:22,549 --> 00:41:24,530
+auxiliares entendeu para facilitar a
+
+1024
+00:41:24,531 --> 00:41:26,510
+vida e muita coisa que eu acho que não
+
+1025
+00:41:26,511 --> 00:41:29,690
+pode melhorar no laje viu tenho muita
+
+1026
+00:41:29,691 --> 00:41:31,608
+coisa e aquela que a gente não sabe
+
+1027
+00:41:31,609 --> 00:41:32,809
+exatamente a gente tem que ver com a sua
+
+1028
+00:41:32,810 --> 00:41:34,730
+escopo né mas também não pode sair
+
+1029
+00:41:34,731 --> 00:41:37,159
+jogando tudo lá no lá e Gil a gente tem
+
+1030
+00:41:37,160 --> 00:41:38,869
+que ter um cuidado também muito grande
+
+1031
+00:41:38,870 --> 00:41:40,190
+então eu acho que você não vai ter
+
+1032
+00:41:40,191 --> 00:41:42,500
+espaço para bibliotecas do tipo dos
+
+1033
+00:41:42,501 --> 00:41:44,329
+sócios entendeu que é justamente ela não
+
+1034
+00:41:44,330 --> 00:41:46,159
+ela talvez não seja pelo mesmo público
+
+1035
+00:41:46,160 --> 00:41:48,679
+entendeu É porque se você pegar o
+
+1036
+00:41:48,680 --> 00:41:50,659
+cultivo e Córrego do Lage viu o time
+
+1037
+00:41:50,660 --> 00:41:53,369
+code do Surface a cada um tem o
+
+1038
+00:41:53,370 --> 00:41:55,440
+background diferente em relação aquilo
+
+1039
+00:41:55,441 --> 00:41:57,559
+que eles trabalharam na vida o tipo de
+
+1040
+00:41:57,560 --> 00:42:00,139
+soft aqueles desenvolvido Então
+
+1041
+00:42:00,140 --> 00:42:02,940
+são os requisitos diferentes que cada um
+
+1042
+00:42:02,941 --> 00:42:04,949
+tem então acho que a gente chega
+
+1043
+00:42:04,950 --> 00:42:07,530
+realmente nunu ap onde isso vai ser
+
+1044
+00:42:07,531 --> 00:42:09,599
+deixar a escolha para os olhos força
+
+1045
+00:42:09,600 --> 00:42:13,199
+muito legal Marcos muito obrigado por
+
+1046
+00:42:13,200 --> 00:42:15,510
+participar do OLX de foco você quer
+
+1047
+00:42:15,511 --> 00:42:16,710
+deixar uma mensagem final para
+
+1048
+00:42:16,711 --> 00:42:20,670
+comunidade Brasileira lusófona de OLX
+
+1049
+00:42:20,671 --> 00:42:25,318
+e olha não agradecer é o convite por bem
+
+1050
+00:42:25,319 --> 00:42:29,088
+bacana o podcast aqui
+
+1051
+00:42:29,089 --> 00:42:32,059
+agradeço demais o convite
+
+1052
+00:42:32,060 --> 00:42:34,500
+e deixar ela assim Acho que a mensagem
+
+1053
+00:42:34,501 --> 00:42:37,110
+que tem que deixar
+
+1054
+00:42:37,111 --> 00:42:40,260
+e em relação à acho que ela tava em
+
+1055
+00:42:40,261 --> 00:42:42,650
+relação ao pessoas entendeu Acho que tem
+
+1056
+00:42:42,651 --> 00:42:45,079
+uma pessoa ser uma coisa que
+
+1057
+00:42:45,080 --> 00:42:47,610
+abriu muitas portas para mim entendeu e
+
+1058
+00:42:47,611 --> 00:42:50,730
+eu vejo principalmente se você também tá
+
+1059
+00:42:50,731 --> 00:42:52,349
+querendo Abrir algumas portas entendeu
+
+1060
+00:42:52,350 --> 00:42:53,880
+parte começar a participar de projetos
+
+1061
+00:42:53,881 --> 00:42:55,409
+uma pessoa se é algo extremamente
+
+1062
+00:42:55,410 --> 00:42:58,199
+importante eu acho É principalmente se
+
+1063
+00:42:58,200 --> 00:42:59,880
+você tem interesse em trabalhar para o
+
+1064
+00:42:59,881 --> 00:43:03,630
+exterior nem sempre é fácil é na e o
+
+1065
+00:43:03,631 --> 00:43:05,550
+pessoa se lhe abre muitas portas ele
+
+1066
+00:43:05,551 --> 00:43:08,820
+ajuda você a a pular algumas Barreiras
+
+1067
+00:43:08,821 --> 00:43:11,519
+em processo de seleção lá fora então eu
+
+1068
+00:43:11,520 --> 00:43:13,380
+acho que é uma coisa que é que é
+
+1069
+00:43:13,381 --> 00:43:15,179
+importante e vai atrás de alguma coisa
+
+1070
+00:43:15,180 --> 00:43:17,699
+que você gosta No meu caso eu gostei
+
+1071
+00:43:17,700 --> 00:43:19,679
+demais de trabalhar com promoção
+
+1072
+00:43:19,680 --> 00:43:22,710
+funcional ele que você adoro trabalhar
+
+1073
+00:43:22,711 --> 00:43:25,739
+com Sam ficou lá Gil e praticamente
+
+1074
+00:43:25,740 --> 00:43:27,480
+assim todos os projetos são pessoas que
+
+1075
+00:43:27,481 --> 00:43:29,309
+eu trabalhei for me deram muita
+
+1076
+00:43:29,310 --> 00:43:32,190
+satisfação Então acho que o senhor coisa
+
+1077
+00:43:32,191 --> 00:43:35,969
+que eu ia falar com idade aqui não é não
+
+1078
+00:43:35,970 --> 00:43:38,440
+tenho medo entendeu e começa a trabalhar
+
+1079
+00:43:38,441 --> 00:43:40,030
+se você quiser se você gostar de um
+
+1080
+00:43:40,031 --> 00:43:43,719
+tecnologia vá em frente começa a
+
+1081
+00:43:43,720 --> 00:43:45,400
+utilizar começa a trabalhar numa pessoa
+
+1082
+00:43:45,401 --> 00:43:47,889
+se e se você tiver interesse no surf se
+
+1083
+00:43:47,890 --> 00:43:51,989
+você gosta da ideia é ajuda a gente né
+
+1084
+00:43:51,990 --> 00:43:54,969
+Tem bastante coisa para fazer um grande
+
+1085
+00:43:54,970 --> 00:43:57,130
+abraço Marlos e para todas as pessoas
+
+1086
+00:43:57,131 --> 00:43:59,289
+que nos escutam até o próximo episódio
+
+1087
+00:43:59,290 --> 00:44:02,650
+do Alexandre foco uma grande abraço até
+
+1088
+00:44:02,651 --> 00:44:04,770
+logo
